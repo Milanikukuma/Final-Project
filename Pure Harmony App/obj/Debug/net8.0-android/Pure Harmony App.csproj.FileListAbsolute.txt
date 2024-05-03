@@ -1032,3 +1032,4 @@ C:\netprojects\Pure Harmony App\Pure Harmony App\obj\Debug\net8.0-android\stamp\
 C:\netprojects\Pure Harmony App\Pure Harmony App\obj\Debug\net8.0-android\stamp\_GenerateJavaStubs.stamp
 C:\netprojects\Pure Harmony App\Pure Harmony App\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\netprojects\Pure Harmony App\Pure Harmony App\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\netprojects\Pure Harmony App\Pure Harmony App\obj\Debug\net8.0-android\Pure Harmony App.sourcelink.json
