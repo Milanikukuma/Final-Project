@@ -11,10 +11,10 @@
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <ItemGroup>
-    <MauiXaml Update="Pages\SignUpPageOfHealthProfessional.xaml">
+    <MauiXaml Update="Pages\HealthProfessionalPages\SignUpPageOfHealthProfessional.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Pages\SignUpPageOfPatient.xaml">
+    <MauiXaml Update="Pages\PatientPages\SignUpPageOfPatient.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>

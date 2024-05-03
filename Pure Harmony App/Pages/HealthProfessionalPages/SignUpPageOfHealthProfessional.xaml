@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pure_Harmony_App.Pages.SignUpPageOfHealthProfessional"
+             Title="SignUpPageOfHealthProfessional">
+    <ScrollView>
+
+        <StackLayout Padding="20" Spacing="20">
+            <!-- Professional Information -->
+            <Label Text="Professional Information"
+               FontSize="Medium"
+               FontAttributes="Bold"/>
+            <Entry Placeholder="Name" x:Name="NameEntry"/>
+            <Entry Placeholder="Professional License Number" x:Name="LicenseNumberEntry"/>
+            <Entry Placeholder="Specialty" x:Name="SpecialtyEntry"/>
+            <Entry Placeholder="Healthcare Organization/Institution" x:Name="OrganizationEntry"/>
+
+            <!-- Login Credentials -->
+            <Label Text="Login Credentials"
+               FontSize="Medium"
+               FontAttributes="Bold"/>
+            <Entry Placeholder="Username" x:Name="UsernameEntry"/>
+            <Entry Placeholder="Password" IsPassword="True" x:Name="PasswordEntry"/>
+            <Entry Placeholder="Confirm Password" IsPassword="True" x:Name="ConfirmPasswordEntry"/>
+
+            <!-- Contact Information -->
+            <Label Text="Contact Information"
+               FontSize="Medium"
+               FontAttributes="Bold"/>
+            <Entry Placeholder="Email Address" Keyboard="Email" x:Name="EmailEntry"/>
+            <Entry Placeholder="Phone Number" Keyboard="Telephone" x:Name="PhoneEntry"/>
+
+            <!-- Optional -->
+            <Label Text="Optional"
+               FontSize="Medium"
+               FontAttributes="Bold"/>
+            <Editor Placeholder="Brief Bio" x:Name="BioEditor" HeightRequest="100"/>
+
+            <!-- Consent -->
+            <Label Text="Consent"
+               FontSize="Medium"
+               FontAttributes="Bold"/>
+            <StackLayout>
+                <Switch x:Name="ConsentSwitch1"/>
+                <Label Text="I consent to the collection and use of my personal and professional information for the purpose of providing healthcare services and support through this app."
+                   FontSize="Small"/>
+            </StackLayout>
+            <StackLayout>
+                <Switch x:Name="ConsentSwitch2"/>
+                <Label Text="I agree to maintain patient confidentiality and adhere to applicable data protection regulations."
+                   FontSize="Small"/>
+            </StackLayout>
+
+            <!-- Terms and Conditions -->
+            <Label Text="Terms and Conditions"
+               FontSize="Medium"
+               FontAttributes="Bold"/>
+            <StackLayout>
+                <Switch x:Name="TermsSwitch"/>
+                <Label Text="I agree to the terms and conditions of the app."
+                   FontSize="Small"/>
+            </StackLayout>
+
+            <!-- Signup Button -->
+            <Button Text="Sign Up"
+                Clicked="OnSignUpClicked"
+                HorizontalOptions="FillAndExpand"
+                BackgroundColor="#007AFF"
+                TextColor="White"/>
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage>
