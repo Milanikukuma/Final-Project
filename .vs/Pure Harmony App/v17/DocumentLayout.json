@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\netprojects\\Pure Harmony App\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3E93A620-7531-40A6-B0C9-3903C13AB925}|Pure Harmony App\\Pure Harmony App.csproj|c:\\netprojects\\pure harmony app\\pure harmony app\\pure harmony app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{3E93A620-7531-40A6-B0C9-3903C13AB925}|Pure Harmony App\\Pure Harmony App.csproj|solutionrelative:pure harmony app\\pure harmony app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{3E93A620-7531-40A6-B0C9-3903C13AB925}|Pure Harmony App\\Pure Harmony App.csproj|c:\\netprojects\\pure harmony app\\pure harmony app\\pages\\healthprofessionalpages\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3E93A620-7531-40A6-B0C9-3903C13AB925}|Pure Harmony App\\Pure Harmony App.csproj|solutionrelative:pure harmony app\\pages\\healthprofessionalpages\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3E93A620-7531-40A6-B0C9-3903C13AB925}|Pure Harmony App\\Pure Harmony App.csproj|c:\\netprojects\\pure harmony app\\pure harmony app\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E93A620-7531-40A6-B0C9-3903C13AB925}|Pure Harmony App\\Pure Harmony App.csproj|solutionrelative:pure harmony app\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E93A620-7531-40A6-B0C9-3903C13AB925}|Pure Harmony App\\Pure Harmony App.csproj|c:\\netprojects\\pure harmony app\\pure harmony app\\pages\\healthprofessionalpages\\landingpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E93A620-7531-40A6-B0C9-3903C13AB925}|Pure Harmony App\\Pure Harmony App.csproj|solutionrelative:pure harmony app\\pages\\healthprofessionalpages\\landingpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E93A620-7531-40A6-B0C9-3903C13AB925}|Pure Harmony App\\Pure Harmony App.csproj|c:\\netprojects\\pure harmony app\\pure harmony app\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E93A620-7531-40A6-B0C9-3903C13AB925}|Pure Harmony App\\Pure Harmony App.csproj|solutionrelative:pure harmony app\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E93A620-7531-40A6-B0C9-3903C13AB925}|Pure Harmony App\\Pure Harmony App.csproj|c:\\netprojects\\pure harmony app\\pure harmony app\\pages\\healthprofessionalpages\\landingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3E93A620-7531-40A6-B0C9-3903C13AB925}|Pure Harmony App\\Pure Harmony App.csproj|solutionrelative:pure harmony app\\pages\\healthprofessionalpages\\landingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E93A620-7531-40A6-B0C9-3903C13AB925}|Pure Harmony App\\Pure Harmony App.csproj|c:\\netprojects\\pure harmony app\\pure harmony app\\pure harmony app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3E93A620-7531-40A6-B0C9-3903C13AB925}|Pure Harmony App\\Pure Harmony App.csproj|solutionrelative:pure harmony app\\pure harmony app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3E93A620-7531-40A6-B0C9-3903C13AB925}|Pure Harmony App\\Pure Harmony App.csproj|c:\\netprojects\\pure harmony app\\pure harmony app\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -22,24 +38,75 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LandingPage.xaml.cs",
+              "DocumentMoniker": "C:\\netprojects\\Pure Harmony App\\Pure Harmony App\\Pages\\HealthProfessionalPages\\LandingPage.xaml.cs",
+              "RelativeDocumentMoniker": "Pure Harmony App\\Pages\\HealthProfessionalPages\\LandingPage.xaml.cs",
+              "ToolTip": "C:\\netprojects\\Pure Harmony App\\Pure Harmony App\\Pages\\HealthProfessionalPages\\LandingPage.xaml.cs",
+              "RelativeToolTip": "Pure Harmony App\\Pages\\HealthProfessionalPages\\LandingPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T11:18:14.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\netprojects\\Pure Harmony App\\Pure Harmony App\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "Pure Harmony App\\MauiProgram.cs",
+              "ToolTip": "C:\\netprojects\\Pure Harmony App\\Pure Harmony App\\MauiProgram.cs",
+              "RelativeToolTip": "Pure Harmony App\\MauiProgram.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T11:17:30.377Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Pure Harmony App",
+              "Title": "Login.xaml",
+              "DocumentMoniker": "C:\\netprojects\\Pure Harmony App\\Pure Harmony App\\Pages\\HealthProfessionalPages\\Login.xaml",
+              "RelativeDocumentMoniker": "Pure Harmony App\\Pages\\HealthProfessionalPages\\Login.xaml",
+              "ToolTip": "C:\\netprojects\\Pure Harmony App\\Pure Harmony App\\Pages\\HealthProfessionalPages\\Login.xaml",
+              "RelativeToolTip": "Pure Harmony App\\Pages\\HealthProfessionalPages\\Login.xaml",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAYwBUAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-06T11:16:38.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LandingPage.xaml",
+              "DocumentMoniker": "C:\\netprojects\\Pure Harmony App\\Pure Harmony App\\Pages\\HealthProfessionalPages\\LandingPage.xaml",
+              "RelativeDocumentMoniker": "Pure Harmony App\\Pages\\HealthProfessionalPages\\LandingPage.xaml",
+              "ToolTip": "C:\\netprojects\\Pure Harmony App\\Pure Harmony App\\Pages\\HealthProfessionalPages\\LandingPage.xaml",
+              "RelativeToolTip": "Pure Harmony App\\Pages\\HealthProfessionalPages\\LandingPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-06T11:16:08.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Pure Harmony App.csproj",
               "DocumentMoniker": "C:\\netprojects\\Pure Harmony App\\Pure Harmony App\\Pure Harmony App.csproj",
               "RelativeDocumentMoniker": "Pure Harmony App\\Pure Harmony App.csproj",
               "ToolTip": "C:\\netprojects\\Pure Harmony App\\Pure Harmony App\\Pure Harmony App.csproj",
               "RelativeToolTip": "Pure Harmony App\\Pure Harmony App.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-03T08:59:29.118Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "WhenOpened": "2024-05-03T08:59:29.118Z"
             },
             {
               "$type": "Document",
@@ -49,14 +116,14 @@
               "RelativeDocumentMoniker": "Pure Harmony App\\MainPage.xaml.cs",
               "ToolTip": "C:\\netprojects\\Pure Harmony App\\Pure Harmony App\\MainPage.xaml.cs",
               "RelativeToolTip": "Pure Harmony App\\MainPage.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAZAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-02T10:24:58.402Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\netprojects\\Pure Harmony App\\Pure Harmony App\\MainPage.xaml",
               "RelativeDocumentMoniker": "Pure Harmony App\\MainPage.xaml",
@@ -64,8 +131,7 @@
               "RelativeToolTip": "Pure Harmony App\\MainPage.xaml",
               "ViewState": "AQIAAAIAAAAAAAAAAAAAAAsAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-02T10:11:23.001Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-02T10:11:23.001Z"
             }
           ]
         }

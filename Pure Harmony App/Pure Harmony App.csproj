@@ -66,10 +66,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Pages\HealthProfessionalPages\SignUpPageOfHealthProfessional.xaml">
+	  <MauiXaml Update="Pages\HealthProfessionalPages\LandingPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\PatientPages\SignUpPageOfPatient.xaml">
+	  <MauiXaml Update="Pages\HealthProfessionalPages\Login.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\HealthProfessionalPages\SignUpPageOfHealthProfessional.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
@@ -78,9 +81,10 @@
 	  <Compile Update="Pages\HealthProfessionalPages\SignUpPageOfHealthProfessional.xaml.cs">
 	    <DependentUpon>%(Filename)</DependentUpon>
 	  </Compile>
-	  <Compile Update="Pages\PatientPages\SignUpPageOfPatient.xaml.cs">
-	    <DependentUpon>%(Filename)</DependentUpon>
-	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Pages\PatientPages\" />
 	</ItemGroup>
 
 </Project>
