@@ -12,71 +12,71 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Pure_Harmony_App
-build_property.ProjectDir = C:\netprojects\Pure Harmony App\Pure Harmony App\
+build_property.ProjectDir = C:\Users\51001\source\repos\Final-Project\Milani's final project\Pure Harmony App\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/netprojects/Pure Harmony App/Pure Harmony App/App.xaml]
+[C:/Users/51001/source/repos/Final-Project/Milani's final project/Pure Harmony App/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/netprojects/Pure Harmony App/Pure Harmony App/AppShell.xaml]
+[C:/Users/51001/source/repos/Final-Project/Milani's final project/Pure Harmony App/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/netprojects/Pure Harmony App/Pure Harmony App/MainPage.xaml]
+[C:/Users/51001/source/repos/Final-Project/Milani's final project/Pure Harmony App/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/netprojects/Pure Harmony App/Pure Harmony App/Pages/HealthProfessionalPages/LandingPage.xaml]
+[C:/Users/51001/source/repos/Final-Project/Milani's final project/Pure Harmony App/Pages/HealthProfessionalPages/LandingPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.Pages.HealthProfessionalPages.LandingPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\HealthProfessionalPages\LandingPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\HealthProfessionalPages\LandingPage.xaml
 
-[C:/netprojects/Pure Harmony App/Pure Harmony App/Pages/HealthProfessionalPages/Login.xaml]
+[C:/Users/51001/source/repos/Final-Project/Milani's final project/Pure Harmony App/Pages/HealthProfessionalPages/Login.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.Pages.HealthProfessionalPages.Login.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\HealthProfessionalPages\Login.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\HealthProfessionalPages\Login.xaml
 
-[C:/netprojects/Pure Harmony App/Pure Harmony App/Pages/HealthProfessionalPages/SignUpPageOfHealthProfessional.xaml]
+[C:/Users/51001/source/repos/Final-Project/Milani's final project/Pure Harmony App/Pages/HealthProfessionalPages/SignUpPageOfHealthProfessional.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.Pages.HealthProfessionalPages.SignUpPageOfHealthProfessional.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\HealthProfessionalPages\SignUpPageOfHealthProfessional.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\HealthProfessionalPages\SignUpPageOfHealthProfessional.xaml
 
-[C:/netprojects/Pure Harmony App/Pure Harmony App/Pages/PatientPages/PatientLandingPage.xaml]
+[C:/Users/51001/source/repos/Final-Project/Milani's final project/Pure Harmony App/Pages/PatientPages/PatientLandingPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.Pages.PatientPages.PatientLandingPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\PatientPages\PatientLandingPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\PatientPages\PatientLandingPage.xaml
 
-[C:/netprojects/Pure Harmony App/Pure Harmony App/Pages/PatientPages/PatientLogin.xaml]
+[C:/Users/51001/source/repos/Final-Project/Milani's final project/Pure Harmony App/Pages/PatientPages/PatientLogin.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.Pages.PatientPages.PatientLogin.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\PatientPages\PatientLogin.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\PatientPages\PatientLogin.xaml
 
-[C:/netprojects/Pure Harmony App/Pure Harmony App/Pages/PatientPages/SignUpPageOfPatient.xaml]
+[C:/Users/51001/source/repos/Final-Project/Milani's final project/Pure Harmony App/Pages/PatientPages/SignUpPageOfPatient.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.Pages.PatientPages.SignUpPageOfPatient.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\PatientPages\SignUpPageOfPatient.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\PatientPages\SignUpPageOfPatient.xaml
 
-[C:/netprojects/Pure Harmony App/Pure Harmony App/Resources/Styles/Colors.xaml]
+[C:/Users/51001/source/repos/Final-Project/Milani's final project/Pure Harmony App/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/netprojects/Pure Harmony App/Pure Harmony App/Resources/Styles/Styles.xaml]
+[C:/Users/51001/source/repos/Final-Project/Milani's final project/Pure Harmony App/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
