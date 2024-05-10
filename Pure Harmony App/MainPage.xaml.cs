@@ -1,5 +1,6 @@
 ﻿using Pure_Harmony_App.Pages;
 using Pure_Harmony_App.Pages.HealthProfessionalPages;
+using Pure_Harmony_App.Pages.PatientPages;
 
 namespace Pure_Harmony_App
 {
@@ -13,7 +14,7 @@ namespace Pure_Harmony_App
 
         private void OnPatientClicked(object sender, EventArgs e)
         {
-           
+            Navigation.PushAsync(new PatientLandingPage());
         }
 
         private void OnHealthProfessionalClicked(object sender, EventArgs e)

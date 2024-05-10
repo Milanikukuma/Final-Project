@@ -1,3 +1,5 @@
+using Pure_Harmony_App.Pages.PatientPages;
+
 namespace Pure_Harmony_App.Pages.HealthProfessionalPages;
 
 public partial class LandingPage : ContentPage

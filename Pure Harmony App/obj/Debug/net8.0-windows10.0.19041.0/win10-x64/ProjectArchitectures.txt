@@ -1,1 +1,0 @@
-C:\netprojects\Pure Harmony App\Pure Harmony App\Pure Harmony App.csproj;x64
