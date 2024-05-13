@@ -8,7 +8,7 @@ public partial class PatientLandingPage : ContentPage
 	}
     private void OnLoginClicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new PatientLogin());
+        Navigation.PushAsync(new PatientLoginPage());
     }
 
     private void OnSignUpClicked(object sender, EventArgs en)

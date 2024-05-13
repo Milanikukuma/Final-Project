@@ -54,11 +54,11 @@ build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.Pages.Pat
 build_metadata.AdditionalFiles.TargetPath = Pages\PatientPages\PatientLandingPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\PatientPages\PatientLandingPage.xaml
 
-[C:/Users/51001/source/repos/Final-Project/Milani's final project/Pure Harmony App/Pages/PatientPages/PatientLogin.xaml]
+[C:/Users/51001/source/repos/Final-Project/Milani's final project/Pure Harmony App/Pages/PatientPages/PatientLoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.Pages.PatientPages.PatientLogin.xaml
-build_metadata.AdditionalFiles.TargetPath = Pages\PatientPages\PatientLogin.xaml
-build_metadata.AdditionalFiles.RelativePath = Pages\PatientPages\PatientLogin.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.Pages.PatientPages.PatientLoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\PatientPages\PatientLoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\PatientPages\PatientLoginPage.xaml
 
 [C:/Users/51001/source/repos/Final-Project/Milani's final project/Pure Harmony App/Pages/PatientPages/SignUpPageOfPatient.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
@@ -77,3 +77,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/51001/source/repos/Final-Project/Milani's final project/Pure Harmony App/Views/Template/PatientHomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.Views.Template.PatientHomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Template\PatientHomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Template\PatientHomePage.xaml

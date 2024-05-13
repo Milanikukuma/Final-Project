@@ -20,10 +20,13 @@
     <MauiXaml Update="Pages\HealthProfessionalPages\SignUpPageOfHealthProfessional.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Pages\PatientPages\PatientLogin.xaml">
+    <MauiXaml Update="Views\Template\PatientHomePage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Pages\PatientPages\PatientLandingPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Pages\PatientPages\PatientLoginPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Pages\PatientPages\SignUpPageOfPatient.xaml">

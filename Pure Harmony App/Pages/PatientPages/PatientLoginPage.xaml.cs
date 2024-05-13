@@ -1,14 +1,14 @@
 namespace Pure_Harmony_App.Pages.PatientPages;
 
-public partial class PatientLogin : ContentPage
+public partial class PatientLoginPage : ContentPage
 {
-	public PatientLogin()
+	public PatientLoginPage()
 	{
 		InitializeComponent();
 	}
 
     private void OnLoginClicked(object sender, EventArgs e)
     {
-
+        Navigation.PushAsync(new());
     }
 }
