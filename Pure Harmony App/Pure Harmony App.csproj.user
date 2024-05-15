@@ -5,31 +5,13 @@
     <ActiveDebugFramework>net8.0-windows10.0.19041.0</ActiveDebugFramework>
     <ActiveDebugProfile>Windows Machine</ActiveDebugProfile>
     <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
-    <DefaultDevice>pixel_5_-_api_34_1</DefaultDevice>
+    <DefaultDevice>pixel_5_-_api_33</DefaultDevice>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0-android|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <ItemGroup>
-    <MauiXaml Update="Pages\HealthProfessionalPages\LandingPage.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
-    <MauiXaml Update="Pages\HealthProfessionalPages\Login.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
-    <MauiXaml Update="Pages\HealthProfessionalPages\SignUpPageOfHealthProfessional.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
-    <MauiXaml Update="Views\Template\PatientHomePage.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
-    <MauiXaml Update="Pages\PatientPages\PatientLandingPage.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
-    <MauiXaml Update="Pages\PatientPages\PatientLoginPage.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
-    <MauiXaml Update="Pages\PatientPages\SignUpPageOfPatient.xaml">
+    <MauiXaml Update="Views\Template\LoginView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>
@@ -38,9 +20,6 @@
       <SubType>Designer</SubType>
     </None>
     <None Update="AppShell.xaml">
-      <SubType>Designer</SubType>
-    </None>
-    <None Update="MainPage.xaml">
       <SubType>Designer</SubType>
     </None>
     <None Update="Platforms\Windows\App.xaml">

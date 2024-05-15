@@ -1,4 +1,6 @@
-﻿namespace Pure_Harmony_App
+﻿using Pure_Harmony_App.Views.Template;
+
+namespace Pure_Harmony_App
 {
     public partial class App : Application
     {
@@ -6,7 +8,9 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new LoginView();
         }
+
+        
     }
 }
