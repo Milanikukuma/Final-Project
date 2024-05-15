@@ -13,6 +13,7 @@ namespace Pure_Harmony_App.Models
         public int TreatmentPlanID { get; set; }
         public DateTime Date { get; set; }
         public bool MedicationTaken { get; set; } // true for yes, false for no
-      
+        public int RFIDTagID { get; set; }
+
     }
 }

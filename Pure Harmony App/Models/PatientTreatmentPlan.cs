@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Pure_Harmony_App.Models
 {
-    public class TreatmentPlan
+    public class PatientTreatmentPlan
     {
-        public int TreatmentPlanID { get; set; }
+        public int PatientTreatmentPlanID { get; set; }
         public int PatientID { get; set; }
         public DateTime TreatmentStartDate { get; set; }
         public DateTime TreatmentEndDate { get; set; }
         public string? MedicationSchedule { get; set; }
-        public int HealthcareProfessionalID { get; set; }
+        public int MedicalProfessionalID { get; set; }
     }
 }
