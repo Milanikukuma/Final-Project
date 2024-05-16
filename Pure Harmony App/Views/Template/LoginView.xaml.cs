@@ -7,8 +7,6 @@ namespace Pure_Harmony_App.Views.Template;
 public partial class LoginView : ContentPage
 {
     private LoginViewModel _viewModel;
-    
-
 
     public LoginView()
     {
@@ -16,37 +14,49 @@ public partial class LoginView : ContentPage
         _viewModel = new LoginViewModel();
         BindingContext = _viewModel;
 
-        // Example: Add a command for Login button (replace with your login logic)
-       // _viewModel.LoginCommand = new Command(Login);
-        // Add a command for Sign Up button
-        //_viewModel.SignupCommand = new Command(Signup);
+        _viewModel.LoginCommand = new Command(Login);
+        _viewModel.SignupCommand = new Command(Signup);
 
+        // Initially hide the signup container, forms, and the picker
+        //SignupContainer.IsVisible = false;
+        //PatientSignupForm.IsVisible = false;
+       // MedicalProfessionalSignupForm.IsVisible = false;
+        //UserTypePicker.IsVisible = false;
     }
-   /* private async void Login(object parameter)
+
+    private async void Login(object parameter)
     {
         // Implement login logic here using _viewModel.Username, _viewModel.Password, _viewModel.SelectedUserType
         // ...
 
         // Example navigation to another page after successful login
 
-    }*/
-    /*private async void Signup(object parameter)
+    }
+
+    private void Signup(object parameter)
     {
-        // Implement sign-up logic here
-        // For example:
-        // await Navigation.PushAsync(new SignupPage());
+        // Show the user type picker
+        SignupContainer.IsVisible = true;
+        UserTypePicker.IsVisible = true;
+    }
 
-        // Show a message box for user type selection
-        string userType = await DisplayActionSheet("Choose User Type", "Cancel", null, "Patient", "Medical Professional");
-        if (userType == "Patient")
+    private void UserTypePicker_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        // Get the selected user type from the picker
+        string selectedUserType = UserTypePicker.Items[UserTypePicker.SelectedIndex];
+
+        // Show the appropriate signup form and hide the other
+        if (selectedUserType == "Patient")
         {
-            await Navigation.PushAsync(new PatientSignupPage());
-
+            PatientSignupForm.IsVisible = true;
+            MedicalProfessionalSignupForm.IsVisible = false;
+            UserTypePicker.IsVisible = false;
         }
-        else if (userType == "Medical Professional")
+        else if (selectedUserType == "Medical Professional")
         {
-            await Navigation.PushAsync(new MedicalProfessionalSignupPage());
-
+            PatientSignupForm.IsVisible = false;
+            MedicalProfessionalSignupForm.IsVisible = true;
+            UserTypePicker.IsVisible = false;
         }
-    }*/
+    }
 }

@@ -8,7 +8,7 @@ namespace Pure_Harmony_App
         {
             InitializeComponent();
 
-            MainPage = new LoginView();
+            MainPage = new NavigationPage(new LoginView());
         }
 
         
