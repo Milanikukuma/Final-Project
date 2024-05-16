@@ -10,6 +10,8 @@
             <Entry Placeholder="Password" Text="{Binding Password}" IsPassword="True" />
             
             <Button Text="Login" Command="{Binding LoginCommand}" />
+            <Button Text="Sign Up" Command="{Binding SignupCommand}" />
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

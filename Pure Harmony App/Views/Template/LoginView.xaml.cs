@@ -1,19 +1,25 @@
 using Pure_Harmony_App.ViewModels;
+using System.Windows.Input;
 
 namespace Pure_Harmony_App.Views.Template;
 
 public partial class LoginView : ContentPage
 {
     private LoginViewModel _viewModel;
+    
+
 
     public LoginView()
-	{
-		InitializeComponent();
+    {
+        InitializeComponent();
         _viewModel = new LoginViewModel();
         BindingContext = _viewModel;
 
         // Example: Add a command for Login button (replace with your login logic)
-        _viewModel.LoginCommand = new RelayCommand(Login);
+        _viewModel.LoginCommand = new Command(Login);
+        // Add a command for Sign Up button
+        _viewModel.SignupCommand = new Command(Signup);
+
     }
     private async void Login(object parameter)
     {
@@ -21,6 +27,25 @@ public partial class LoginView : ContentPage
         // ...
 
         // Example navigation to another page after successful login
-        
+
+    }
+    private async void Signup(object parameter)
+    {
+        // Implement sign-up logic here
+        // For example:
+        // await Navigation.PushAsync(new SignupPage());
+
+        // Show a message box for user type selection
+        string userType = await DisplayActionSheet("Choose User Type", "Cancel", null, "Patient", "Medical Professional");
+        if (userType == "Patient")
+        {
+            // Navigate to patient sign-up page
+
+        }
+        else if (userType == "Medical Professional")
+        {
+            // Navigate to medical professional sign-up page
+
+        }
     }
 }

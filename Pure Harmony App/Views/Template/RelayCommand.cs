@@ -1,4 +1,6 @@
 ﻿
+using System.Windows.Input;
+
 namespace Pure_Harmony_App.Views.Template
 {
     internal class RelayCommand
@@ -9,5 +11,7 @@ namespace Pure_Harmony_App.Views.Template
         {
             this.login = login;
         }
+        public ICommand SignupCommand { get; set; }
+
     }
 }

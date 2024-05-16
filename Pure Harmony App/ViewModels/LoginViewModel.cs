@@ -51,12 +51,48 @@ namespace Pure_Harmony_App.ViewModels
             }
         }
 
-        internal RelayCommand LoginCommand { get; set; }
+        public Command LoginCommand { get; internal set; }
+        public Command SignupCommand { get; internal set; }
 
         public LoginViewModel()
         {
             // Initialize default user type (e.g., Patient)
             SelectedUserType = UserType.Patient;
+
+            // Initialize commands
+            LoginCommand = new Command(Login);
+            SignupCommand = new Command(Signup);
+        }
+
+        private async void Login()
+        {
+            // Implement login logic here using Username, Password, SelectedUserType
+            // For example:
+            // bool loginSuccessful = await SomeLoginService.LoginAsync(Username, Password, SelectedUserType);
+            // if (loginSuccessful)
+            // {
+            //     await App.Current.MainPage.Navigation.PushAsync(new MainPage());
+            // }
+        }
+
+        private async void Signup()
+        {
+            // Implement sign-up logic here
+            // For example:
+            // await App.Current.MainPage.Navigation.PushAsync(new SignupPage());
+
+            // Show a message box for user type selection
+            string userType = await App.Current.MainPage.DisplayActionSheet("Choose User Type", "Cancel", null, "Patient", "Medical Professional");
+            if (userType == "Patient")
+            {
+                // Navigate to patient sign-up page
+                
+            }
+            else if (userType == "Medical Professional")
+            {
+                // Navigate to medical professional sign-up page
+               
+            }
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
