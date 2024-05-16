@@ -3,10 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Pure_Harmony_App.Pages.MedicalProfessionalSignupPage"
              Title="MedicalProfessionalSignupPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+    <VerticalStackLayout Padding="20">
+        <!-- Medical Professional Signup Form -->
+        <Entry Placeholder="First Name" />
+        <Entry Placeholder="Last Name" />
+        <Entry Placeholder="Email" Keyboard="Email" />
+        <Entry Placeholder="Phone Number" Keyboard="Telephone" />
+        <Entry Placeholder="Specialty" />
+
+        <!-- Additional Fields as Needed -->
+
+        <!-- Signup Button -->
+        <Button Text="Sign Up" Command="{Binding SignupCommand}" HorizontalOptions="FillAndExpand" Margin="0,20,0,0" />
     </VerticalStackLayout>
 </ContentPage>

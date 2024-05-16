@@ -6,4 +6,9 @@ public partial class PatientSignupPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void SignUp_Clicked(object sender, EventArgs e)
+    {
+
+    }
 }
