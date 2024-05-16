@@ -14,7 +14,7 @@ namespace Pure_Harmony_App.Service
         {
             _dbConnection = new SQLiteConnection(GetDatabasePath());
             _dbConnection.CreateTable<Patient>();
-            _dbConnection.CreateTable<MedicalRecords>();
+            
             SeedPatientDatabase();
         }
 
@@ -58,7 +58,7 @@ namespace Pure_Harmony_App.Service
 
         public Patient GetPatientById(int PatientId)
         {
-            return _dbConnection.Table<Patient>().Where(p => p.PatientId == PatientId).FirstOrDefault();
+            return _dbConnection.Table<Patient>().Where(p => p.PatientID == PatientId).FirstOrDefault();
         }
 
         public void UpdatePatient(Patient patient)
@@ -71,9 +71,6 @@ namespace Pure_Harmony_App.Service
             _dbConnection.Delete<Patient>(PatientId);
         }
 
-        public List<MedicalRecords> GetMedicalRecordsForPatient(int patientId)
-        {
-            return _dbConnection.Table<MedicalRecords>().Where(m => m.PatientId == patientId).ToList();
-        }
+        
     }
 }

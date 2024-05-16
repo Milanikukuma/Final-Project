@@ -8,12 +8,27 @@ namespace Pure_Harmony_App.Models
 {
     public class MedicalProfessional
     {
-        public int HealthcareProfessionalID { get; set; }
-        public string? Name { get; set; }
-        public string? Title { get; set; }
-        public string? ContactInformation { get; set; }
+        public int MedicalProfessionalID { get; set; }
 
-        public string? Email { get; set; }
+        public int UserID { get; set; }
+
+        public string Name { get; set; }
+
+        public string Title { get; set; }
+
+        public string ContactInformation { get; set; }
+
+        public string EmailAddress { get; set; }
+
+
+
+        // Navigation properties 
+
+       
+
+        public List<Alert> Alerts { get; set; } = new List<Alert>();
+
+        public List<Treatment> Treatments { get; set; } = new List<Treatment>();
 
     }
 }

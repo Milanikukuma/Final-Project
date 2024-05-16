@@ -8,7 +8,18 @@ namespace Pure_Harmony_App.Models
 {
     public class RFIDReader
     {
-        public int RFIDID { get; set; }
-        public int PatientID { get; set; }
+        
+
+            public int RFIDReaderID { get; set; }
+
+            public int PatientID { get; set; }
+
+
+
+            // Navigation property 
+
+            public Patient Patient { get; set; }
+
+        }
     }
-}
+
