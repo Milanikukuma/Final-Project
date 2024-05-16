@@ -19,7 +19,7 @@ namespace Pure_Harmony_App.ViewModels
             }
         }
 
-        public ObservableCollection<MedicalRecords> MedicalRecords { get; set; }
+       
 
         public PatientViewModel()
         {
@@ -32,7 +32,7 @@ namespace Pure_Harmony_App.ViewModels
             // Assuming patient ID 1 for demonstration
             Patient patient = _database.GetPatientById(1);
             CurrentPatient = patient;
-            MedicalRecords = new ObservableCollection<MedicalRecords>(_database.GetMedicalRecordsForPatient(patient.PatientId));
+            
         }
 
         public void ReloadData()

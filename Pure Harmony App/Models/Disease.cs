@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Pure_Harmony_App.Models
 {
-    public class DiseaseType
+    public class Disease
     {
         public int DiseaseID  { get; set; }
         public string? Discrpition { get; set; }

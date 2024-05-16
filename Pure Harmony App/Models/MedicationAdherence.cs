@@ -9,11 +9,24 @@ namespace Pure_Harmony_App.Models
     public class MedicationAdherence
     {
         public int AdherenceID { get; set; }
+
         public int PatientID { get; set; }
+
         public int TreatmentPlanID { get; set; }
+
         public DateTime Date { get; set; }
-        public bool MedicationTaken { get; set; } // true for yes, false for no
+
+        public bool MedicationTaken { get; set; }
+
         public int RFIDTagID { get; set; }
+
+
+
+        // Navigation properties 
+
+        public Patient Patient { get; set; }
+
+        public RFIDTags RFIDTags { get; set; }
 
     }
 }
