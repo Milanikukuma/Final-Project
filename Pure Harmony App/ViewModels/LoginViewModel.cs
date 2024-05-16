@@ -1,4 +1,5 @@
-﻿using Pure_Harmony_App.Views.Template;
+﻿using Pure_Harmony_App.Pages;
+using Pure_Harmony_App.Views.Template;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -75,25 +76,23 @@ namespace Pure_Harmony_App.ViewModels
             // }
         }
 
-        private async void Signup()
-        {
-            // Implement sign-up logic here
-            // For example:
-            // await App.Current.MainPage.Navigation.PushAsync(new SignupPage());
+      private async void Signup()
+{
+    // Show a message box for user type selection
+    string userType = await App.Current.MainPage.DisplayActionSheet("Choose User Type", "Cancel", null, "Patient", "Medical Professional");
+    
+    if (userType == "Patient")
+    {
+        // Navigate to patient sign-up page
+        await App.Current.MainPage.Navigation.PushAsync(new PatientSignupPage());
+    }
+    else if (userType == "Medical Professional")
+    {
+        // Navigate to medical professional sign-up page
+        await App.Current.MainPage.Navigation.PushAsync(new MedicalProfessionalSignupPage());
+    }
+}
 
-            // Show a message box for user type selection
-            string userType = await App.Current.MainPage.DisplayActionSheet("Choose User Type", "Cancel", null, "Patient", "Medical Professional");
-            if (userType == "Patient")
-            {
-                // Navigate to patient sign-up page
-                
-            }
-            else if (userType == "Medical Professional")
-            {
-                // Navigate to medical professional sign-up page
-               
-            }
-        }
 
         public event PropertyChangedEventHandler PropertyChanged;
 

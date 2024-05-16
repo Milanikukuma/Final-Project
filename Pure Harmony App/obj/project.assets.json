@@ -59246,24 +59246,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Zintle Xabendlini\\.nuget\\packages\\": {},
+    "C:\\Users\\51001\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Zintle Xabendlini\\source\\repos\\Final-Project\\Pure Harmony App\\Pure Harmony App.csproj",
+      "projectUniqueName": "C:\\Users\\51001\\source\\repos\\Final-Project\\Updated version of the finale\\Pure Harmony App\\Pure Harmony App.csproj",
       "projectName": "Pure Harmony App",
-      "projectPath": "C:\\Users\\Zintle Xabendlini\\source\\repos\\Final-Project\\Pure Harmony App\\Pure Harmony App.csproj",
-      "packagesPath": "C:\\Users\\Zintle Xabendlini\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Zintle Xabendlini\\source\\repos\\Final-Project\\Pure Harmony App\\obj\\",
+      "projectPath": "C:\\Users\\51001\\source\\repos\\Final-Project\\Updated version of the finale\\Pure Harmony App\\Pure Harmony App.csproj",
+      "packagesPath": "C:\\Users\\51001\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\51001\\source\\repos\\Final-Project\\Updated version of the finale\\Pure Harmony App\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Zintle Xabendlini\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\51001\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

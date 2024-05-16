@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using Pure_Harmony_App.Pages;
 using Pure_Harmony_App.Views.Template;
 
 namespace Pure_Harmony_App
@@ -19,10 +20,12 @@ namespace Pure_Harmony_App
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
-
-            return builder.Build();
             builder.Services.AddSingleton<LoginView>();
-            
+            builder.Services.AddSingleton<PatientSignupPage>();
+            builder.Services.AddSingleton<MedicalProfessionalSignupPage>();
+            return builder.Build();
+          
+
         }
     }
 }
