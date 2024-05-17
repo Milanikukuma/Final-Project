@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+using SQLite;
+using SQLiteNetExtensions.Attributes;
 namespace Pure_Harmony_App.Models
 {
     public class RFIDTags
     {
+        [PrimaryKey, AutoIncrement]
         public int RFIDTagID { get; set; }
 
         public int PatientID { get; set; }
@@ -20,8 +18,8 @@ namespace Pure_Harmony_App.Models
 
 
 
-        // Navigation property 
+        [OneToMany(CascadeOperations = CascadeOperation.All)]
 
-        public Patient Patient { get; set; }
+        public List<MedicationAdherence> MedicationAdherenceRecords { get; set; } = new List<MedicationAdherence>();
     }
 }

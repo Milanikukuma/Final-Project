@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using SQLite;
+using SQLiteNetExtensions.Attributes;
 
 namespace Pure_Harmony_App.Models
 {
@@ -10,8 +8,8 @@ namespace Pure_Harmony_App.Models
 
     {
 
+        [PrimaryKey, AutoIncrement]
         public int AlertID { get; set; }
-
         public int PatientID { get; set; }
 
         public int MedicalProfessionalID { get; set; }

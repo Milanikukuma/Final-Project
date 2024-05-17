@@ -1,34 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+using SQLite;
+using SQLiteNetExtensions.Attributes;
 namespace Pure_Harmony_App.Models
 {
     public class MedicalProfessional
     {
+        [PrimaryKey, AutoIncrement]
+
         public int MedicalProfessionalID { get; set; }
 
-        public int UserID { get; set; }
+
 
         public string Name { get; set; }
 
-        public string Title { get; set; }
 
-        public string ContactInformation { get; set; }
 
-        public string EmailAddress { get; set; }
+        public string Specialty { get; set; }
 
 
 
-        // Navigation properties 
-
-       
+        [OneToMany(CascadeOperations = CascadeOperation.All)]
 
         public List<Alert> Alerts { get; set; } = new List<Alert>();
-
-        public List<Treatment> Treatments { get; set; } = new List<Treatment>();
-
     }
 }

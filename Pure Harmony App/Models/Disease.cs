@@ -1,14 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using SQLite;
+using SQLiteNetExtensions.Attributes;
 
 namespace Pure_Harmony_App.Models
 {
     public class Disease
     {
-        public int DiseaseID  { get; set; }
-        public string? Discrpition { get; set; }
+        [PrimaryKey, AutoIncrement]
+        public int DiseaseID { get; set; }
+
+        public string? Description { get; set; }
+
+       // [OneToMany(CascadeOperations = CascadeOperation.All)]
+       // public List<PatientTreatment> PatientTreatments { get; set; } = new List<PatientTreatment>();
     }
 }

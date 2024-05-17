@@ -1,14 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+using SQLite;
+using SQLiteNetExtensions.Attributes;
 namespace Pure_Harmony_App.Models
 {
     class User
     {
+
+        [PrimaryKey, AutoIncrement]
         public int UserID { get; set; }
 
         public string UserType { get; set; } // "Patient", "Medical" 
@@ -17,15 +15,15 @@ namespace Pure_Harmony_App.Models
 
         public string Password { get; set; }
 
-
-
-        // Navigation property 
-
+        // Navigation properties
+        [OneToOne(CascadeOperations = CascadeOperation.All)]
         public Patient Patient { get; set; } // If UserType is "Patient" 
 
+        [OneToOne(CascadeOperations = CascadeOperation.All)]
         public MedicalProfessional MedicalProfessional { get; set; } // If UserType is "Medical" 
 
-       
 
     }
-}
+
+    }
+

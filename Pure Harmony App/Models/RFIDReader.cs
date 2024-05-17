@@ -1,18 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+using SQLite;
+using SQLiteNetExtensions.Attributes;
 namespace Pure_Harmony_App.Models
 {
     public class RFIDReader
     {
-        
 
-            public int RFIDReaderID { get; set; }
 
-            public int PatientID { get; set; }
+        [PrimaryKey, AutoIncrement]
+        public int RFIDReaderID { get; set; }
+
+
+        public int PatientID { get; set; }
 
 
 
