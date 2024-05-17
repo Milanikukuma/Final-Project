@@ -12,54 +12,66 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Pure_Harmony_App
-build_property.ProjectDir = C:\Users\Zintle Xabendlini\source\repos\Final-Project\Pure Harmony App\
+build_property.ProjectDir = C:\Users\51001\source\repos\Final-Project\eyokugqibela ngqangqa\Pure Harmony App\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/Zintle Xabendlini/source/repos/Final-Project/Pure Harmony App/App.xaml]
+[C:/Users/51001/source/repos/Final-Project/eyokugqibela ngqangqa/Pure Harmony App/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/Zintle Xabendlini/source/repos/Final-Project/Pure Harmony App/AppShell.xaml]
+[C:/Users/51001/source/repos/Final-Project/eyokugqibela ngqangqa/Pure Harmony App/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/Zintle Xabendlini/source/repos/Final-Project/Pure Harmony App/Pages/MedicalProfessionalSignupPage.xaml]
+[C:/Users/51001/source/repos/Final-Project/eyokugqibela ngqangqa/Pure Harmony App/Pages/MedicalProfessionalSignupPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.Pages.MedicalProfessionalSignupPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\MedicalProfessionalSignupPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\MedicalProfessionalSignupPage.xaml
 
-[C:/Users/Zintle Xabendlini/source/repos/Final-Project/Pure Harmony App/Pages/PatientSignupPage.xaml]
+[C:/Users/51001/source/repos/Final-Project/eyokugqibela ngqangqa/Pure Harmony App/Pages/PatientSignupPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.Pages.PatientSignupPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\PatientSignupPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\PatientSignupPage.xaml
 
-[C:/Users/Zintle Xabendlini/source/repos/Final-Project/Pure Harmony App/Resources/Styles/Colors.xaml]
+[C:/Users/51001/source/repos/Final-Project/eyokugqibela ngqangqa/Pure Harmony App/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/Zintle Xabendlini/source/repos/Final-Project/Pure Harmony App/Resources/Styles/Styles.xaml]
+[C:/Users/51001/source/repos/Final-Project/eyokugqibela ngqangqa/Pure Harmony App/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Users/Zintle Xabendlini/source/repos/Final-Project/Pure Harmony App/Views/PatientView.xaml]
+[C:/Users/51001/source/repos/Final-Project/eyokugqibela ngqangqa/Pure Harmony App/Views/PatientView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.Views.PatientView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\PatientView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\PatientView.xaml
 
-[C:/Users/Zintle Xabendlini/source/repos/Final-Project/Pure Harmony App/Views/Template/LoginView.xaml]
+[C:/Users/51001/source/repos/Final-Project/eyokugqibela ngqangqa/Pure Harmony App/Views/Template/LoginView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.Views.Template.LoginView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Template\LoginView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Template\LoginView.xaml
+
+[C:/Users/51001/source/repos/Final-Project/eyokugqibela ngqangqa/Pure Harmony App/Views/Template/MedicalHomeView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.Views.Template.MedicalHomeView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Template\MedicalHomeView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Template\MedicalHomeView.xaml
+
+[C:/Users/51001/source/repos/Final-Project/eyokugqibela ngqangqa/Pure Harmony App/Views/Template/PatientHomeView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.Views.Template.PatientHomeView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Template\PatientHomeView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Template\PatientHomeView.xaml
