@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KNOR4DC2lBFDy3eJoC7uaeXaNoYz5Y8AjQ1TBz1JK4hDrLQUxy71/+hUB90V9gRhtpiSVuUYfc54Kd9Bgii0ig==",
+  "dgSpecHash": "T9qE2f+SZhTT8PPLzJVRZxE2A/hPA/NDoU6c7qf/UY5str2zoeFvpRGaCGyWo5+D1KgDYosJBs+DEGs0LGbXEw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\51001\\source\\repos\\Final-Project\\eyokugqibela ngqangqa\\Pure Harmony App\\Pure Harmony App.csproj",
+  "projectFilePath": "C:\\Users\\51001\\source\\repos\\Final-Project\\Eyokugcina\\Pure Harmony App\\Pure Harmony App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\51001\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\51001\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",

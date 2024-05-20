@@ -3,13 +3,13 @@
     x:Class="Pure_Harmony_App.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:Pure_Harmony_App"
+    xmlns:local="clr-namespace:Pure_Harmony_App.Views.Template"
     Shell.FlyoutBehavior="Disabled"
     Title="Pure_Harmony_App">
 
     <ShellContent
         Title="Home"
-        Content="{DataTemplate local:AppShell}"
-        Route="MainPage" />
+        ContentTemplate="{DataTemplate local:LoginView}"
+        Route="loginview" />
 
 </Shell>

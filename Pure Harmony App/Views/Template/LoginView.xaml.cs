@@ -8,11 +8,12 @@ public partial class LoginView : ContentPage
 {
     private LoginViewModel _viewModel;
 
-    public LoginView()
+    public LoginView(LoginViewModel vm)
     {
         InitializeComponent();
-        _viewModel = new LoginViewModel();
-        BindingContext = _viewModel;
+        _viewModel = vm;
+      //  _viewModel = new LoginViewModel();
+        BindingContext = vm;
 
         _viewModel.LoginCommand = new Command(Login);
         _viewModel.SignupCommand = new Command(Signup);

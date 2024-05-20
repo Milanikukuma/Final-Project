@@ -1,4 +1,5 @@
 ﻿using Pure_Harmony_App.Pages;
+using Pure_Harmony_App.Service;
 using Pure_Harmony_App.Views.Template;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,9 @@ namespace Pure_Harmony_App.ViewModels
         private string _username;
         private string _password;
         private UserType _selectedUserType;
+
+        private Localdatabase _database;
+
 
         public enum UserType
         {
@@ -55,8 +59,10 @@ namespace Pure_Harmony_App.ViewModels
         public Command LoginCommand { get; internal set; }
         public Command SignupCommand { get; internal set; }
 
-        public LoginViewModel()
+        public LoginViewModel(Localdatabase database)
         {
+            _database = database;
+
             // Initialize default user type (e.g., Patient)
             SelectedUserType = UserType.Patient;
 
@@ -74,9 +80,20 @@ namespace Pure_Harmony_App.ViewModels
             // {
             //     await App.Current.MainPage.Navigation.PushAsync(new MainPage());
             // }
+
+            var user = _database.ValidateUserNameAndPassword(Username, Password);
+
+            if (user == null)
+            {
+                await App.Current.MainPage.DisplayActionSheet("Login", "Login Failed", "Ok");
+            }
+            else
+            {
+                // Proceed to next page
+            }
         }
 
-      private async void Signup()
+        private async void Signup()
 {
     // Show a message box for user type selection
     string userType = await App.Current.MainPage.DisplayActionSheet("Choose User Type", "Cancel", null, "Patient", "Medical Professional");

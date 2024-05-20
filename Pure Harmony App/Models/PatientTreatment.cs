@@ -4,7 +4,7 @@ using SQLiteNetExtensions.Attributes;
 
 namespace Pure_Harmony_App.Models
 {
-    internal class PatientTreatment
+    public class PatientTreatment
     {
         [PrimaryKey, AutoIncrement]
         public int PatientTreatmentID { get; set; }

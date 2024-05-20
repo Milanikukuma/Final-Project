@@ -1,48 +1,39 @@
 ﻿using Pure_Harmony_App.Models;
 using System.Collections.ObjectModel;
-using Pure_Harmony_App.Service;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 
 namespace Pure_Harmony_App.ViewModels
 {
-    public partial class PatientViewModel : BaseViewModel
+    public class PatientViewModel : INotifyPropertyChanged
     {
-        private Localdatabase _database;
+        private ObservableCollection<Patient> _patients;
 
-        private Patient _currentPatient;
-        public Patient CurrentPatient
+        public ObservableCollection<Patient> Patients
         {
-            get { return _currentPatient; }
+            get { return _patients; }
             set
             {
-                _currentPatient = value;
+                _patients = value;
                 OnPropertyChanged();
             }
         }
 
-       
-
         public PatientViewModel()
         {
-            _database = new Localdatabase();
-            LoadData();
+            // Initialize the collection of patients
+            Patients = new ObservableCollection<Patient>();
+            // You can add sample patients here, or retrieve them from a database
+            // For example:
+            // Patients.Add(new Patient { FirstName = "John", LastName = "Doe", DateOfBirth = new DateTime(1990, 5, 10), Gender = Gender.Male, Email = "john@example.com", PhoneNumber = "1234567890", Address = "123 Street" });
+            // Patients.Add(new Patient { FirstName = "Jane", LastName = "Doe", DateOfBirth = new DateTime(1995, 8, 20), Gender = Gender.Female, Email = "jane@example.com", PhoneNumber = "9876543210", Address = "456 Avenue" });
         }
 
-        private void LoadData()
-        {
-            // Assuming patient ID 1 for demonstration
-            Patient patient = _database.GetPatientById(1);
-            CurrentPatient = patient;
-            
-        }
+        public event PropertyChangedEventHandler PropertyChanged;
 
-        public void ReloadData()
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
-            LoadData();
-        }
-
-        public void SavePatient()
-        {
-            _database.UpdatePatient(CurrentPatient);
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

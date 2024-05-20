@@ -11,6 +11,8 @@ public partial class PatientSignupPage : ContentPage
 
     private async void SignUp_Clicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new PatientHomeView());
+        await Shell.Current.GoToAsync("patienthomeview");
+        
+      //  await Navigation.PushAsync(new PatientHomeView());
     }
 }

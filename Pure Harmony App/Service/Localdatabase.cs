@@ -14,7 +14,8 @@ namespace Pure_Harmony_App.Service
         {
             _dbConnection = new SQLiteConnection(GetDatabasePath());
             _dbConnection.CreateTable<Patient>();
-            
+            _dbConnection.CreateTable<User>();
+
             SeedPatientDatabase();
         }
 
@@ -71,6 +72,12 @@ namespace Pure_Harmony_App.Service
             _dbConnection.Delete<Patient>(PatientId);
         }
 
+        public User ValidateUserNameAndPassword(string userName, string password)
+        {
+           var user =  _dbConnection.Table<User>().Where(x => x.Username == userName && x.Password == password).FirstOrDefault();
+
+            return user;
+        }
         
     }
 }

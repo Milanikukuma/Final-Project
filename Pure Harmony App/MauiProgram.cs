@@ -1,5 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using Pure_Harmony_App.Pages;
+using Pure_Harmony_App.Service;
+using Pure_Harmony_App.ViewModels;
 using Pure_Harmony_App.Views.Template;
 
 namespace Pure_Harmony_App
@@ -20,9 +22,14 @@ namespace Pure_Harmony_App
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
-            builder.Services.AddSingleton<LoginView>();
-            builder.Services.AddSingleton<PatientSignupPage>();
-            builder.Services.AddSingleton<MedicalProfessionalSignupPage>();
+            builder.Services.AddTransient<LoginView>();
+            builder.Services.AddTransient<PatientSignupPage>();
+            builder.Services.AddTransient<MedicalProfessionalSignupPage>();
+            builder.Services.AddSingleton<Localdatabase>();
+            
+            builder.Services.AddTransient<LoginViewModel>();
+
+
             return builder.Build();
           
 

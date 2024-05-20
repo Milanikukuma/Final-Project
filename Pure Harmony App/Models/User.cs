@@ -3,7 +3,7 @@ using SQLite;
 using SQLiteNetExtensions.Attributes;
 namespace Pure_Harmony_App.Models
 {
-    class User
+    public class User
     {
 
         [PrimaryKey, AutoIncrement]
