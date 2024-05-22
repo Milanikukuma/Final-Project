@@ -51,7 +51,7 @@ namespace Pure_Harmony_App.Service
             {
                 MedicalProfessional medicalProfessional = new MedicalProfessional()
                 {
-                    MedicalProfessionalID = 0,
+                    Id = 0,
                     Name = "",
                     Specialty = "",
 

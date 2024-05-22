@@ -6,7 +6,7 @@ namespace Pure_Harmony_App.Models
     public class MedicalProfessional
     {
         [PrimaryKey, AutoIncrement]
-
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Password { get; set; }
         public string Email { get; set; }
@@ -15,7 +15,7 @@ namespace Pure_Harmony_App.Models
         public string PhysicalAddress { get; set; }
         public DateTime DateOfBirth { get; set; }
         public DateTime CreatedDate { get; set; }
-        public int MedicalProfessionalID { get; internal set; }
+       
         public string Specialty { get; internal set; }
     }
 }
