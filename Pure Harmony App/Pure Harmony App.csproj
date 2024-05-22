@@ -78,6 +78,9 @@
 	  <MauiXaml Update="Pages\PatientSignupPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\Template\MedicalSignupView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\PatientView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

@@ -15,8 +15,8 @@ public partial class LoginView : ContentPage
       //  _viewModel = new LoginViewModel();
         BindingContext = vm;
 
-        _viewModel.LoginCommand = new Command(Login);
-        _viewModel.SignupCommand = new Command(Signup);
+      //  _viewModel.LoginCommand = new Command(Login);
+      //  _viewModel.SignupCommand = new Command(Signup);
 
         // Initially hide the signup container, forms, and the picker
         //SignupContainer.IsVisible = false;
@@ -25,16 +25,16 @@ public partial class LoginView : ContentPage
         //UserTypePicker.IsVisible = false;
     }
 
-    private async void Login(object parameter)
+   /* private async void Login(object parameter)
     {
         // Implement login logic here using _viewModel.Username, _viewModel.Password, _viewModel.SelectedUserType
         // ...
 
         // Example navigation to another page after successful login
 
-    }
+    }*/
 
-    private void Signup(object parameter)
+   /* private void Signup(object parameter)
     {
         // Show the user type picker
         SignupContainer.IsVisible = true;
@@ -59,5 +59,5 @@ public partial class LoginView : ContentPage
             MedicalProfessionalSignupForm.IsVisible = true;
             UserTypePicker.IsVisible = false;
         }
-    }
+    }*/
 }

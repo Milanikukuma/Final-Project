@@ -76,6 +76,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.Views.Tem
 build_metadata.AdditionalFiles.TargetPath = Views\Template\MedicalHomeView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Template\MedicalHomeView.xaml
 
+[C:/Users/51001/source/repos/Final-Project/Eyokugcina/Pure Harmony App/Views/Template/MedicalSignupView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.Views.Template.MedicalSignupView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Template\MedicalSignupView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Template\MedicalSignupView.xaml
+
 [C:/Users/51001/source/repos/Final-Project/Eyokugcina/Pure Harmony App/Views/Template/PatientHomeView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.Views.Template.PatientHomeView.xaml

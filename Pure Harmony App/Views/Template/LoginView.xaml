@@ -15,31 +15,31 @@
 
             <Button Text="Sign Up" Command="{Binding SignupCommand}" />
 
-            <StackLayout x:Name="SignupContainer" IsVisible="False">
+           <!-- <StackLayout x:Name="SignupContainer" IsVisible="False">
                 <Picker x:Name="UserTypePicker" Title="Choose User Type">
-                    <Picker.Items>
-                        <x:String>Patient</x:String>
-                        <x:String>Medical Professional</x:String>
+                    <Picker.Items>  -->
+        <!--            <x:String>Patient</x:String> -->
+     <!--  <x:String>Medical Professional</x:String>
                     </Picker.Items>
-                </Picker>
+                </Picker> -->
 
                 <!-- Patient Signup Form -->
-                <StackLayout x:Name="PatientSignupForm" IsVisible="False">
-                    <Label Text="Patient Signup" />
-                    <Entry Placeholder="First Name" />
-                    <Entry Placeholder="Last Name" />
-                    <Button Text="Sign Up" />
-                </StackLayout>
+        <!--    <StackLayout x:Name="PatientSignupForm" IsVisible="False "> -->
+        <!--      <Label Text="Patient Signup" />
+                    <Entry Placeholder="First Name" /> -->
+        <!--        <Entry Placeholder="Last Name" />-->
+        <!--          <Button Text="Sign Up" />-->
+        <!--     </StackLayout>-->
 
                 <!-- Medical Professional Signup Form -->
-                <StackLayout x:Name="MedicalProfessionalSignupForm" IsVisible="False">
-                    <Label Text="Medical Professional Signup" />
-                    <Entry Placeholder="License Number" />
-                    <Entry Placeholder="Specialty" />
-                    <Button Text="Sign Up" />
-                </StackLayout>
-            </StackLayout>
+        <!--   <StackLayout x:Name="MedicalProfessionalSignupForm" IsVisible="False">-->
+        <!--      <Label Text="Medical Professional Signup" /> -->
+        <!--    <Entry Placeholder="License Number" /> -->
+        <!--    <Entry Placeholder="Specialty" /> -->
+        <!--    <Button Text="Sign Up" /> -->
+        <!--   </StackLayout>-->
+        <!--    </StackLayout>-->
 
-        </StackLayout>
+    </StackLayout>
    
 </ContentPage>

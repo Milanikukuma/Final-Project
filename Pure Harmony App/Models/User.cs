@@ -1,6 +1,8 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
 using SQLite;
 using SQLiteNetExtensions.Attributes;
+using ForeignKeyAttribute = SQLiteNetExtensions.Attributes.ForeignKeyAttribute;
 namespace Pure_Harmony_App.Models
 {
     public class User
@@ -9,9 +11,10 @@ namespace Pure_Harmony_App.Models
         [PrimaryKey, AutoIncrement]
         public int UserID { get; set; }
 
-        public string UserType { get; set; } // "Patient", "Medical" 
+        [ForeignKey(typeof(UserType))]
+        public int UserTypeId {get; set; } // "Patient", "Medical" 
 
-        public string Username { get; set; }
+        public string Email { get; set; }
 
         public string Password { get; set; }
 
@@ -21,6 +24,8 @@ namespace Pure_Harmony_App.Models
 
         [OneToOne(CascadeOperations = CascadeOperation.All)]
         public MedicalProfessional MedicalProfessional { get; set; } // If UserType is "Medical" 
+
+
 
 
     }

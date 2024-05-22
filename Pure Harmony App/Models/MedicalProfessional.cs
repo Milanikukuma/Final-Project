@@ -7,20 +7,15 @@ namespace Pure_Harmony_App.Models
     {
         [PrimaryKey, AutoIncrement]
 
-        public int MedicalProfessionalID { get; set; }
-
-
-
         public string Name { get; set; }
-
-
-
-        public string Specialty { get; set; }
-
-
-
-        [OneToMany(CascadeOperations = CascadeOperation.All)]
-
-        public List<Alert> Alerts { get; set; } = new List<Alert>();
+        public string Password { get; set; }
+        public string Email { get; set; }
+        public string PhoneNumber { get; set; }
+        public string Gender { get; set; }
+        public string PhysicalAddress { get; set; }
+        public DateTime DateOfBirth { get; set; }
+        public DateTime CreatedDate { get; set; }
+        public int MedicalProfessionalID { get; internal set; }
+        public string Specialty { get; internal set; }
     }
 }

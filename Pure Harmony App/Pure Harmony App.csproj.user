@@ -20,6 +20,9 @@
     <MauiXaml Update="Pages\PatientSignupPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\Template\MedicalSignupView.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\PatientView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

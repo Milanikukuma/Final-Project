@@ -13,7 +13,7 @@ namespace Pure_Harmony_App.ViewModels
 {
     public class LoginViewModel : INotifyPropertyChanged
     {
-        private string _username;
+        private string _email;
         private string _password;
         private UserType _selectedUserType;
 
@@ -26,12 +26,12 @@ namespace Pure_Harmony_App.ViewModels
             MedicalProfessional
         }
 
-        public string Username
+        public string Email
         {
-            get { return _username; }
+            get { return _email; }
             set
             {
-                _username = value;
+                _email = value;
                 OnPropertyChanged();
             }
         }
@@ -68,7 +68,7 @@ namespace Pure_Harmony_App.ViewModels
 
             // Initialize commands
             LoginCommand = new Command(Login);
-            SignupCommand = new Command(Signup);
+           SignupCommand = new Command(Signup);
         }
 
         private async void Login()
@@ -81,7 +81,7 @@ namespace Pure_Harmony_App.ViewModels
             //     await App.Current.MainPage.Navigation.PushAsync(new MainPage());
             // }
 
-            var user = _database.ValidateUserNameAndPassword(Username, Password);
+            var user = _database.ValidateUserNameAndPassword(Email , Password);
 
             if (user == null)
             {
@@ -93,30 +93,30 @@ namespace Pure_Harmony_App.ViewModels
             }
         }
 
-        private async void Signup()
-{
-    // Show a message box for user type selection
-    string userType = await App.Current.MainPage.DisplayActionSheet("Choose User Type", "Cancel", null, "Patient", "Medical Professional");
-    
-    if (userType == "Patient")
-    {
-        // Navigate to patient sign-up page
-        await App.Current.MainPage.Navigation.PushAsync(new PatientSignupPage());
-    }
-    else if (userType == "Medical Professional")
-    {
-        // Navigate to medical professional sign-up page
-        await App.Current.MainPage.Navigation.PushAsync(new MedicalProfessionalSignupPage());
-    }
-}
+         private async void Signup()
+ {
+     // Show a message box for user type selection
+     string userType = await App.Current.MainPage.DisplayActionSheet("Choose User Type", "Cancel", null, "Patient", "Medical Professional");
+
+     if (userType == "Patient")
+     {
+         // Navigate to patient sign-up page
+         await App.Current.MainPage.Navigation.PushAsync(new PatientSignupPage());
+     }
+     else if (userType == "Medical Professional")
+     {
+         // Navigate to medical professional sign-up page
+         await App.Current.MainPage.Navigation.PushAsync(new MedicalProfessionalSignupPage());
+     }
+ }
 
 
-        public event PropertyChangedEventHandler PropertyChanged;
+         public event PropertyChangedEventHandler PropertyChanged;
 
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
+         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+         {
+             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+         }
+     }
     }
-}
 
