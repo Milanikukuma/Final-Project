@@ -5,7 +5,6 @@
              Title="LoginView">
 
 
-   
         <StackLayout>
 
             <Label Text="Login" />
