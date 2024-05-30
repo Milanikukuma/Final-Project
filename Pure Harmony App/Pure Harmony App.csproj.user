@@ -14,16 +14,16 @@
     <MauiXaml Update="Pages\Alerts.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Pages\MedicalProfessionalSignupPage.xaml">
+    <MauiXaml Update="Pages\MedicalSignUp.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Pages\PatientSignupPage.xaml">
+    <MauiXaml Update="Pages\PatientHomePage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Pages\PatientSignUpPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Views\Template\MedicalSignupView.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
-    <MauiXaml Update="Views\PatientView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Views\Template\LoginView.xaml">

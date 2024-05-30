@@ -1,4 +1,5 @@
 ﻿using Pure_Harmony_App.Views;
+using Pure_Harmony_App.Pages;
 using Pure_Harmony_App.Views.Template;
 
 namespace Pure_Harmony_App
@@ -14,7 +15,7 @@ namespace Pure_Harmony_App
 
         public void RegisterRoutes()
         {
-            Routing.RegisterRoute("loginview", typeof(LoginView));
+            Routing.RegisterRoute("patientsignuppage", typeof(PatientSignUpPage));
             Routing.RegisterRoute("patienthomeview", typeof(PatientHomeView));
         }
 

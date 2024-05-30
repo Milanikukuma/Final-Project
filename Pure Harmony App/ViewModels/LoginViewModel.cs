@@ -73,40 +73,55 @@ namespace Pure_Harmony_App.ViewModels
 
         private async void Login()
         {
-            // Implement login logic here using Username, Password, SelectedUserType
-            // For example:
-            // bool loginSuccessful = await SomeLoginService.LoginAsync(Username, Password, SelectedUserType);
-            // if (loginSuccessful)
-            // {
-            //     await App.Current.MainPage.Navigation.PushAsync(new MainPage());
-            // }
-
-            var user = _database.ValidateUserNameAndPassword(Email , Password);
-
-            if (user == null)
+            // Validate if email and password are provided
+            if (string.IsNullOrEmpty(Email) || string.IsNullOrEmpty(Password))
             {
-                await App.Current.MainPage.DisplayActionSheet("Login", "Login Failed", "Ok");
+                await App.Current.MainPage.DisplayAlert("Error", "Please provide email and password.", "OK");
+                return;
+            }
+
+            // Validate the credentials against the database
+            var user = _database.ValidateUserNameAndPassword(Email, Password);
+
+            if (user != null)
+            {
+
+                if (user.UserTypeId == 1)
+                {
+                    // Successful login, navigate to the main page
+                    await App.Current.MainPage.Navigation.PushAsync(new PatientHomePage());
+                }
+                else if (user.UserTypeId == 2)
+
+                {
+                    await App.Current.MainPage.Navigation.PushAsync(new MedicalHomeView());
+                }
             }
             else
             {
-                // Proceed to next page
+                // Invalid credentials, display an error message
+                await App.Current.MainPage.DisplayAlert("Error", "Invalid email or password.", "OK");
             }
         }
 
-         private async void Signup()
+
+
+        private async void Signup()
  {
      // Show a message box for user type selection
      string userType = await App.Current.MainPage.DisplayActionSheet("Choose User Type", "Cancel", null, "Patient", "Medical Professional");
 
      if (userType == "Patient")
      {
-         // Navigate to patient sign-up page
-         await App.Current.MainPage.Navigation.PushAsync(new PatientSignupPage());
+                // Navigate to patient sign-up pageawait Shell.Current.GoToAsync("patientsignuppage")
+                await Shell.Current.GoToAsync("patientsignuppage");
+         //await App.Current.MainPage.Navigation.PushAsync(new MedicalSignUp());
      }
      else if (userType == "Medical Professional")
      {
-         // Navigate to medical professional sign-up page
-         await App.Current.MainPage.Navigation.PushAsync(new MedicalProfessionalSignupPage());
+                // Navigate to medical professional sign-up page
+                await Shell.Current.GoToAsync("patientsignuppage");
+         //await App.Current.MainPage.Navigation.PushAsync(new PatientSignUpPage());
      }
  }
 

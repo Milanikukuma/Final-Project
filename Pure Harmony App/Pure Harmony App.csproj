@@ -69,19 +69,25 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Pages\PatientSignUpPage.xaml.cs">
+	    <DependentUpon>PatientSignUpPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="Pages\Alerts.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\MedicalProfessionalSignupPage.xaml">
+	  <MauiXaml Update="Pages\MedicalSignUp.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\PatientSignupPage.xaml">
+	  <MauiXaml Update="Pages\PatientHomePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\PatientSignUpPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Template\MedicalSignupView.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\PatientView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Template\LoginView.xaml">

@@ -1,9 +1,11 @@
+using Pure_Harmony_App.ViewModels;
+
 namespace Pure_Harmony_App.Views;
 
 public partial class MedicalSignupView : ContentPage
 {
-    private MedicalSignupView _viewModels;
-    public MedicalSignupView(MedicalSignupView vm)
+    private SignUpViewModel  _viewModels;
+    public MedicalSignupView(SignUpViewModel vm)
     {
         InitializeComponent();
         _viewModels = vm;
@@ -11,8 +13,4 @@ public partial class MedicalSignupView : ContentPage
         BindingContext = vm;
     }
 
-    private void SignUp_Clicked(object sender, EventArgs e)
-    {
-
-    }
 }

@@ -1,4 +1,5 @@
-﻿using Pure_Harmony_App.Models;
+﻿using Newtonsoft.Json;
+using Pure_Harmony_App.Models;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -14,10 +15,9 @@ namespace Pure_Harmony_App.Service
         public Localdatabase()
         {
             _dbConnection = new SQLiteConnection(GetDatabasePath());
-            _dbConnection.CreateTable<Patient>();
+
             _dbConnection.CreateTable<User>();
             _dbConnection.CreateTable<UserType>();
-            _dbConnection.CreateTable<MedicalProfessional>();
 
             SeedDatabase();
         }
@@ -31,48 +31,14 @@ namespace Pure_Harmony_App.Service
 
         public void SeedDatabase()
         {
-            if (_dbConnection.Table<Patient>().Count() == 0)
+            if (_dbConnection.Table<UserType>().Count() == 0)
             {
-                Patient patient = new Patient()
-                {
-                    FirstName = "John",
-                    LastName = "Doe",
-                    DateOfBirth = new DateTime(1980, 5, 15),
-                    Gender = Gender.Male,
-                    Email = "john.doe@example.com",
-                    PhoneNumber = "123-456-7890",
-                    Address = "123 Main Street, Anytown, USA"
-                };
-
-                _dbConnection.Insert(patient);
+                _dbConnection.Insert(new UserType { TypeName = "Patient" });
+                _dbConnection.Insert(new UserType { TypeName = "MedicalProfessinal" });
             }
-
-            if (_dbConnection.Table<MedicalProfessional>().Count() == 0)
-            {
-                MedicalProfessional medicalProfessional = new MedicalProfessional()
-                {
-                    Id = 0,
-                    Name = "",
-                    Specialty = "",
-
-
-
-                };
-            }
-            if(_dbConnection.Table<UserType>().Count() == 0)
-            {
-                UserType userType = new UserType()
-                {
-                    UserTypeId = 1,
-                    TypeName = "user",
-                };
-                _dbConnection.Insert(userType);
-            };
         }
 
         // CRUD operations for User table
-
-       
 
         public List<User> GetAllUsers()
         {
@@ -83,18 +49,12 @@ namespace Pure_Harmony_App.Service
         {
             return _dbConnection.Table<User>().Where(u => u.UserID == userId).FirstOrDefault();
         }
+
         public void InsertUser(User user)
         {
             _dbConnection.Insert(user);
         }
 
-
-      /*ublic void GetUserTypeId(int UserTypeId)
-        {
-            return _dbConnection.Table<UserType>().Where(u => u.UserTypeId == GetUserTypeId).FirstOrDefault();
-        }
-      */
-        
         public void UpdateUser(User user)
         {
             _dbConnection.Update(user);
@@ -109,5 +69,13 @@ namespace Pure_Harmony_App.Service
         {
             return _dbConnection.Table<User>().Where(x => x.Email == Email && x.Password == password).FirstOrDefault();
         }
+
+        // Removed the incorrect usage of GetUserTypes here
+
+        public List<UserType> GetUserTypes()
+        {
+            return _dbConnection.Table<UserType>().ToList();
+        }
+
     }
 }

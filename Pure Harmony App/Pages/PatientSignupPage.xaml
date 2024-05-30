@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Pure_Harmony_App.Pages.PatientSignupPage"
-             Title="PatientSignupPage">
-    <StackLayout Padding="20">
-        <Label Text="Patient Sign Up" FontSize="Large" HorizontalOptions="Center" Margin="0,20,0,20" />
+             x:Class="Pure_Harmony_App.Pages.PatientSignUpPage"
+             xmlns:viewmodels="clr-namespace:Pure_Harmony_App.ViewModels"
+             x:DataType="viewmodels:SignUpViewModel">
+    
+    <VerticalStackLayout>
+    <Entry x:Name="UserNameEntry" Placeholder="Username" Text="{Binding UserName}"  />
+        <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" Text="{Binding Password}" />
+        <Entry x:Name="EmailEntry" Placeholder="Email" Text="{Binding Email}"/>
+        <Entry x:Name="PhoneNumberEntry" Placeholder="Phone Number" Text="{Binding PhoneNumber}" />
+        <Entry x:Name="GenderEntry" Placeholder="Gender" Text="{Binding Gender}" />
+        <Entry x:Name="PhysicalAddressEntry" Placeholder="Physical Address" Text="{Binding PhysicalAddress}" />
+    <DatePicker x:Name="DateOfBirthPicker" />
 
-        <Entry Placeholder="Full Name" />
-        <Entry Placeholder="Email" />
-        <Entry Placeholder="Phone Number" />
-        <Entry Placeholder="Date of Birth" />
-        <Entry Placeholder="Address" />
+        <Button Text="Sign Up" Command="{Binding SignupCommand}" />
 
-        <Button Text="Sign Up" Clicked="SignUp_Clicked" HorizontalOptions="FillAndExpand" Margin="0,20,0,0" />
-    </StackLayout>
-
+    </VerticalStackLayout>
 </ContentPage>
