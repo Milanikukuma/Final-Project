@@ -16,8 +16,9 @@ namespace Pure_Harmony_App
         public void RegisterRoutes()
         {
             Routing.RegisterRoute("patientsignuppage", typeof(PatientSignUpPage));
-            Routing.RegisterRoute("patienthomeview", typeof(PatientHomeView));
+            Routing.RegisterRoute("medicalhomeview", typeof(MedicalHomeView));
         }
 
     }
 }
+

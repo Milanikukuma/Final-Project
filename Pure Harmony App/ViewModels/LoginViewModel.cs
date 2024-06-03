@@ -89,12 +89,12 @@ namespace Pure_Harmony_App.ViewModels
                 if (user.UserTypeId == 1)
                 {
                     // Successful login, navigate to the main page
-                    await Shell.Current.GoToAsync("PatientHomeView");
+                    await App.Current.MainPage.Navigation.PushAsync(new MedicalHomeView());
                 }
                 else if (user.UserTypeId == 2)
 
                 {
-                    await Shell.Current.GoToAsync("MedicalHomeView");
+                    await App.Current.MainPage.Navigation.PushAsync(new MedicalHomeView());
                 }
             }
             else
@@ -120,7 +120,7 @@ namespace Pure_Harmony_App.ViewModels
      else if (userType == "Medical Professional")
      {
                 // Navigate to medical professional sign-up page
-                await Shell.Current.GoToAsync("patientsignuppage");
+                await Shell.Current.GoToAsync("medicalhomeview");
          //await App.Current.MainPage.Navigation.PushAsync(new PatientSignUpPage());
      }
  }

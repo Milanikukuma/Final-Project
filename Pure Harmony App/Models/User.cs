@@ -28,7 +28,10 @@ using ForeignKeyAttribute = SQLiteNetExtensions.Attributes.ForeignKeyAttribute;
 
         [OneToOne(CascadeOperations = CascadeOperation.All)]
         public MedicalProfessional MedicalProfessional { get; set; } // If UserType is "Medical" 
-    }
+    public string Name { get; internal set; }
+    public string? Specialty { get; internal set; }
+    public string UserType { get; internal set; }
+}
 
 
 
