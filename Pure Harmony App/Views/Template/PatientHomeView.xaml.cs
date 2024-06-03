@@ -1,3 +1,4 @@
+using Pure_Harmony_App.Pages;
 using Pure_Harmony_App.Service;
 using Pure_Harmony_App.ViewModels;
 using System;
@@ -23,7 +24,7 @@ namespace Pure_Harmony_App.Views
             }
         }
 
-        public PatientHomeView(Localdatabase database)
+        public PatientHomeView()
         {
             InitializeComponent();
 
@@ -77,10 +78,7 @@ namespace Pure_Harmony_App.Views
             }
         }
 
-        private void OneNameButton_Clicked(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void MedRemindersButton_Clicked(object sender, EventArgs e)
         {
@@ -95,6 +93,11 @@ namespace Pure_Harmony_App.Views
         private void EducationalResourcesButton_Clicked(object sender, EventArgs e)
         {
 
+        }
+
+        private async void MedicationButton_Clicked(object sender, EventArgs e)
+        {
+            //await Navigation.PushAsync(new MedicalSignUp());
         }
     }
 }

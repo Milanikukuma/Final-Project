@@ -40,7 +40,7 @@
                      VerticalOptions="End"
                      HorizontalOptions="FillAndExpand">
 
-            <Button Text="One Name"
+            <Button Text="Medication"
                     BackgroundColor="Transparent"
                     TextColor="Gray"
                     BorderColor="Transparent"
@@ -48,7 +48,7 @@
                     CornerRadius="0"
                     VerticalOptions="FillAndExpand"
                     HorizontalOptions="FillAndExpand"
-                    Clicked="OneNameButton_Clicked" />
+                    Clicked="MedicationButton_Clicked" />
             <Button Text="Med Reminders"
                     BackgroundColor="Transparent"
                     TextColor="Gray"

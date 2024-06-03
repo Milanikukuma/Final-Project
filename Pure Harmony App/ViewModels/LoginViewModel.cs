@@ -89,12 +89,12 @@ namespace Pure_Harmony_App.ViewModels
                 if (user.UserTypeId == 1)
                 {
                     // Successful login, navigate to the main page
-                    await App.Current.MainPage.Navigation.PushAsync(new PatientHomePage());
+                    await Shell.Current.GoToAsync("PatientHomeView");
                 }
                 else if (user.UserTypeId == 2)
 
                 {
-                    await App.Current.MainPage.Navigation.PushAsync(new MedicalHomeView());
+                    await Shell.Current.GoToAsync("MedicalHomeView");
                 }
             }
             else

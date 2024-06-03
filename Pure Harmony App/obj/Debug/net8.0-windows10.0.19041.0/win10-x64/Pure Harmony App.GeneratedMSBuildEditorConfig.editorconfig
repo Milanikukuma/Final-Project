@@ -36,6 +36,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.Pages.Med
 build_metadata.AdditionalFiles.TargetPath = Pages\MedicalSignUp.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\MedicalSignUp.xaml
 
+[C:/Users/51001/source/repos/Final-Project/Hosh wena/Pure Harmony App/Pages/MedicationPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.Pages.MedicationPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\MedicationPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\MedicationPage.xaml
+
 [C:/Users/51001/source/repos/Final-Project/Hosh wena/Pure Harmony App/Pages/PatientHomePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.Pages.PatientHomePage.xaml

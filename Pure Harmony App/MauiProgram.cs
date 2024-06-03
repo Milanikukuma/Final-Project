@@ -2,6 +2,7 @@
 using Pure_Harmony_App.Pages;
 using Pure_Harmony_App.Service;
 using Pure_Harmony_App.ViewModels;
+using Pure_Harmony_App.Views;
 using Pure_Harmony_App.Views.Template;
 
 namespace Pure_Harmony_App
@@ -23,6 +24,7 @@ namespace Pure_Harmony_App
     		builder.Logging.AddDebug();
 #endif
             builder.Services.AddTransient<LoginView>();
+            builder.Services.AddTransient<PatientHomeView>();
             builder.Services.AddTransient<PatientSignUpPage>();
             
             builder.Services.AddSingleton<Localdatabase>();

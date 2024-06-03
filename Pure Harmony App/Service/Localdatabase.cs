@@ -34,7 +34,7 @@ namespace Pure_Harmony_App.Service
             if (_dbConnection.Table<UserType>().Count() == 0)
             {
                 _dbConnection.Insert(new UserType { TypeName = "Patient" });
-                _dbConnection.Insert(new UserType { TypeName = "MedicalProfessinal" });
+                _dbConnection.Insert(new UserType { TypeName = "MedicalProfessional" });
             }
         }
 

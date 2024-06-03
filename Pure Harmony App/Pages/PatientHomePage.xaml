@@ -3,10 +3,73 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Pure_Harmony_App.Pages.PatientHomePage"
              Title="PatientHomePage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <StackLayout>
+        <!-- Patient details -->
+
+        <Label Text="First Name:" />
+        <Entry Text="{Binding Patient.FirstName}" />
+
+        <Label Text="Last Name:" />
+        <Entry Text="{Binding Patient.LastName}" />
+
+        <Label Text="Date of Birth:" />
+        <Entry Text="{Binding Patient.DateOfBirth}" />
+
+        <Label Text="Gender:" />
+        <Entry Text="{Binding Patient.Gender}" />
+
+        <Label Text="Email:" />
+        <Entry Text="{Binding Patient.Email}" />
+
+        <Label Text="Phone Number:" />
+        <Entry Text="{Binding Patient.PhoneNumber}" />
+
+        <Label Text="Address:" />
+        <Entry Text="{Binding Patient.Address}" />
+
+
+        <!-- Bottom buttons -->
+        <StackLayout Orientation="Horizontal"
+                  BackgroundColor="Transparent"
+                  VerticalOptions="End"
+                  HorizontalOptions="FillAndExpand">
+
+            <Button Text="One Name"
+                 BackgroundColor="Transparent"
+                 TextColor="Gray"
+                 BorderColor="Transparent"
+                 BorderWidth="0"
+                 CornerRadius="0"
+                 VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand"
+                 Clicked="OneNameButton_Clicked" />
+            <Button Text="Med Reminders"
+                 BackgroundColor="Transparent"
+                 TextColor="Gray"
+                 BorderColor="Transparent"
+                 BorderWidth="0"
+                 CornerRadius="0"
+                 VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand"
+                 Clicked="MedRemindersButton_Clicked" />
+            <Button Text="Alerts"
+                 BackgroundColor="Transparent"
+                 TextColor="Gray"
+                 BorderColor="Transparent"
+                 BorderWidth="0"
+                 CornerRadius="0"
+                 VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand"
+                 Clicked="AlertsButton_Clicked" />
+            <Button Text="Educational Resources"
+                 BackgroundColor="Transparent"
+                 TextColor="Gray"
+                 BorderColor="Transparent"
+                 BorderWidth="0"
+                 CornerRadius="0"
+                 VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand"
+                 Clicked="EducationalResourcesButton_Clicked" />
+        </StackLayout>
+    </StackLayout>
 </ContentPage>

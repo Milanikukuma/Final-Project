@@ -2,12 +2,10 @@
 using Pure_Harmony_App.Models;
 using Pure_Harmony_App.Pages;
 using Pure_Harmony_App.Service;
-using Pure_Harmony_App.ViewModels;
+
+using Pure_Harmony_App.Views;
 using Pure_Harmony_App.Views.Template;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 
 
 namespace Pure_Harmony_App.ViewModels
@@ -118,6 +116,7 @@ namespace Pure_Harmony_App.ViewModels
         }
 
         // Method for handling sign-up button click event
+        // Method for handling sign-up button click event
         public async void SignUp()
         {
             // Find the selected user type
@@ -149,7 +148,7 @@ namespace Pure_Harmony_App.ViewModels
                 //Other check
             }
 
- 
+
             // Create a new user object
             var newUser = new User()
             {
@@ -159,7 +158,7 @@ namespace Pure_Harmony_App.ViewModels
                 PhoneNumber = PhoneNumber,
                 Gender = Gender,
                 PhysicalAddress = PhysicalAddress,
-             //   DateOfBirth = DateOfBirth,
+                //   DateOfBirth = DateOfBirth,
                 CreatedDate = DateTime.Now,
                 UserTypeId = userType.UserTypeId
             };
@@ -167,15 +166,20 @@ namespace Pure_Harmony_App.ViewModels
             // Insert the new user into the local database
             _localdatabase.InsertUser(newUser);
 
-
+            // Navigate to the appropriate page based on user type
             if (userType.UserTypeId == 1)
-                await App.Current.MainPage.Navigation.PushAsync(new PatientHomePage());
-            else _ = (userType.UserTypeId == 2);
+            {
+                // Navigate to the PatientHomeView page if the user is a patient
+                await App.Current.MainPage.Navigation.PushAsync(new PatientHomeView());
+            }
+            else if (userType.UserTypeId == 2)
+            {
+                // Navigate to the MedicalHomeView page if the user is a medical professional
                 await App.Current.MainPage.Navigation.PushAsync(new MedicalHomeView());
+            }
+            // Display alert or handle UI interactions for successful sign-up (implementation not provided)
 
-
-
-            // Display alert or handle UI interactions for successful sign-up
         }
+
     }
 }
