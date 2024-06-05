@@ -3,22 +3,36 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Pure_Harmony_App.Views.MedicalSignupView"
              Title="MedicalSignupView">
-    <ScrollView>
-        <StackLayout Padding="20" BindingContext="{StaticResource ViewModel}">
-            <!-- Medical Professional Signup Form -->
-            <Entry Placeholder="First Name" Text="{Binding FirstName}" />
-            <Entry Placeholder="Last Name" Text="{Binding LastName}" />
-            <Entry Placeholder="Email" Keyboard="Email" Text="{Binding Email}" />
-            <Entry Placeholder="Phone Number" Keyboard="Telephone" Text="{Binding PhoneNumber}" />
-            <Entry Placeholder="Specialty" Text="{Binding Specialty}" />
+    <ContentPage.Content>
+        <Grid RowDefinitions="*">
+            <Frame Grid.Row="0" 
+                BackgroundColor="WhiteSmoke" 
+                HasShadow="True" 
+                CornerRadius="20"
+                Padding="20" Margin="20">
+                <ScrollView>
+                    <StackLayout Spacing="15" BindingContext="{StaticResource ViewModel}">
+                        <Entry Placeholder="First Name" Keyboard="Text" Text="{Binding FirstNameEntry}" />
+                        <Entry Placeholder="Last Name" Keyboard="Text" Text="{Binding LastNameEntry}" />
+                        <Entry Placeholder="Email" Keyboard="Email" Text="{Binding EmailEntry}" />
+                        <Entry Placeholder="Phone Number" Keyboard="Telephone" Text="{Binding PhoneNumberEntry}" />
+                        <Entry Placeholder="Location" Keyboard="Text" Text="{Binding LocationEntry}" />
+                        <Entry Placeholder="Specialty" Keyboard="Text" Text="{Binding SpecialtyEntry}" />
+                        <Entry Placeholder="Gender" Keyboard="Text" Text="{Binding GenderEntry}" />
+                        <Entry Placeholder="Physical Address" Keyboard="Text" Text="{Binding PhysicalAddressEntry}" />
+                        <DatePicker Date="{Binding DateOfBirth}" />
 
-            <!-- Additional Fields as Needed -->
-            <Entry Placeholder="Gender" Text="{Binding Gender}" />
-            <Entry Placeholder="Physical Address" Text="{Binding PhysicalAddress}" />
-            <DatePicker Date="{Binding DateOfBirth}" />
-
-            <!-- Signup Button -->
-            <Button Text="Sign Up" Command="{Binding SignUpCommand}" HorizontalOptions="FillAndExpand" Margin="0,20,0,0" />
-        </StackLayout>
-    </ScrollView>
+                        <Button Text="Sign Up" 
+                             Command="{Binding SignUpCommand}" 
+                             HorizontalOptions="FillAndExpand"
+                             BackgroundColor="#007ACC"  
+                             TextColor="White"
+                             CornerRadius="25" 
+                             Padding="15,10"
+                             Margin="0,20,0,0" />
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>

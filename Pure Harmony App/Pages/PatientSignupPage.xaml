@@ -3,18 +3,36 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Pure_Harmony_App.Pages.PatientSignUpPage"
              xmlns:viewmodels="clr-namespace:Pure_Harmony_App.ViewModels"
-             x:DataType="viewmodels:SignUpViewModel">
-    
-    <VerticalStackLayout>
-    <Entry x:Name="UserNameEntry" Placeholder="Username" Text="{Binding UserName}"  />
-        <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" Text="{Binding Password}" />
-        <Entry x:Name="EmailEntry" Placeholder="Email" Text="{Binding Email}"/>
-        <Entry x:Name="PhoneNumberEntry" Placeholder="Phone Number" Text="{Binding PhoneNumber}" />
-        <Entry x:Name="GenderEntry" Placeholder="Gender" Text="{Binding Gender}" />
-        <Entry x:Name="PhysicalAddressEntry" Placeholder="Physical Address" Text="{Binding PhysicalAddress}" />
-    <DatePicker x:Name="DateOfBirthPicker" />
+             x:DataType="viewmodels:SignUpViewModel"
+             BackgroundImageSource="bg.jpeg">
 
-        <Button Text="Sign Up" Command="{Binding SignupCommand}" />
+    <ContentPage.Content>
+        <Grid RowDefinitions="*">
 
-    </VerticalStackLayout>
+
+            <Frame Grid.Row="0" 
+            BackgroundColor="WhiteSmoke" 
+            HasShadow="True" 
+            CornerRadius="20"
+            Padding="20" Margin="20">
+                <ScrollView>
+                    <StackLayout Spacing="15">
+                        <Entry x:Name="UserNameEntry" Placeholder="Username" Text="{Binding UserName}"  />
+                        <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" Text="{Binding Password}" />
+                        <Entry x:Name="EmailEntry" Placeholder="Email" Text="{Binding Email}"/>
+                        <Entry x:Name="PhoneNumberEntry" Placeholder="Phone Number" Text="{Binding PhoneNumber}" />
+                        <Entry x:Name="GenderEntry" Placeholder="Gender" Text="{Binding Gender}" />
+                        <Entry x:Name="PhysicalAddressEntry" Placeholder="Physical Address" Text="{Binding PhysicalAddress}" />
+                        <DatePicker x:Name="DateOfBirthPicker" />
+
+                        <Button Text="Sign Up" Command="{Binding SignupCommand}"
+                             BackgroundColor="#007ACC"
+                             TextColor="White"/>
+
+
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>
