@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Pure Harmony App")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+1b131c03ee3b2736609cf78b91dd14d372a83596")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+c645d85e44805563c12f8a85df33cce5fed2b3d2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pure Harmony App")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pure Harmony App")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

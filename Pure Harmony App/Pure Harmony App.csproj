@@ -70,34 +70,34 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Pages\PatientSignUpPage.xaml.cs">
+	  <Compile Update="Pages\PatientFolder\PatientSignupPage.xaml.cs">
 	    <DependentUpon>PatientSignUpPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Pages\Alerts.xaml">
+	  <MauiXaml Update="Pages\PatientFolder\Alerts.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\MedicalSignUp.xaml">
+	  <MauiXaml Update="Pages\MedicalFolder\MedicalSignUp.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\MedicationPage.xaml">
+	  <MauiXaml Update="Pages\PatientFolder\MedicationPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\PatientHomePage.xaml">
+	  <MauiXaml Update="Pages\PatientFolder\PatientHomePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\PatientProfilePage.xaml">
+	  <MauiXaml Update="Pages\MedicalFolder\PatientProfilePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\Patients.xaml">
+	  <MauiXaml Update="Pages\MedicalFolder\Patients.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\PatientSignUpPage.xaml">
+	  <MauiXaml Update="Pages\PatientFolder\PatientSignupPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\ProfilePage.xaml">
+	  <MauiXaml Update="Pages\MedicalFolder\ProfilePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Template\MedicalSignupView.xaml">

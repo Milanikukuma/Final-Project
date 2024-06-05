@@ -2,8 +2,8 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <IsFirstTimeProjectOpen>False</IsFirstTimeProjectOpen>
-    <ActiveDebugFramework>net8.0-android</ActiveDebugFramework>
-    <ActiveDebugProfile>Pixel 5 - API 34 (Android 14.0 - API 34)</ActiveDebugProfile>
+    <ActiveDebugFramework>net8.0-windows10.0.19041.0</ActiveDebugFramework>
+    <ActiveDebugProfile>Windows Machine</ActiveDebugProfile>
     <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
     <DefaultDevice>pixel_5_-_api_34</DefaultDevice>
   </PropertyGroup>
@@ -11,28 +11,28 @@
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <ItemGroup>
-    <MauiXaml Update="Pages\Alerts.xaml">
+    <MauiXaml Update="Pages\PatientFolder\Alerts.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Pages\MedicalSignUp.xaml">
+    <MauiXaml Update="Pages\MedicalFolder\MedicalSignUp.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Pages\MedicationPage.xaml">
+    <MauiXaml Update="Pages\PatientFolder\MedicationPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Pages\PatientHomePage.xaml">
+    <MauiXaml Update="Pages\PatientFolder\PatientHomePage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Pages\PatientProfilePage.xaml">
+    <MauiXaml Update="Pages\MedicalFolder\PatientProfilePage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Pages\Patients.xaml">
+    <MauiXaml Update="Pages\MedicalFolder\Patients.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Pages\PatientSignUpPage.xaml">
+    <MauiXaml Update="Pages\PatientFolder\PatientSignupPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Pages\ProfilePage.xaml">
+    <MauiXaml Update="Pages\MedicalFolder\ProfilePage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Views\Template\MedicalSignupView.xaml">
