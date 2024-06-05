@@ -77,5 +77,9 @@ namespace Pure_Harmony_App.Service
             return _dbConnection.Table<UserType>().ToList();
         }
 
+        internal User GetUserByEmail(string email)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -9,6 +9,7 @@ namespace Pure_Harmony_App.ViewModels
     {
         private ObservableCollection<Patient> _patients;
 
+
         public ObservableCollection<Patient> Patients
         {
             get { return _patients; }

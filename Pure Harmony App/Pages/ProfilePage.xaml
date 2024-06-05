@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Pure_Harmony_App.Views.MedicalSignupView"
-             Title="MedicalSignupView">
+             xmlns:viewModels="clr-namespace:Pure_Harmony_App.ViewModels"
+             x:Class="Pure_Harmony_App.Pages.ProfilePage"
+             Title="ProfilePage">
+
+    <ContentPage.BindingContext>
+        <viewModels:ProfileViewModel />
+    </ContentPage.BindingContext>
+
     <ScrollView>
-        <StackLayout Padding="20" BindingContext="{StaticResource ViewModel}">
-            <!-- Medical Professional Signup Form -->
+        <StackLayout Padding="20">
+            <!-- Profile Information Form -->
             <Entry Placeholder="First Name" Text="{Binding FirstName}" />
             <Entry Placeholder="Last Name" Text="{Binding LastName}" />
-            <Entry Placeholder="Email" Keyboard="Email" Text="{Binding Email}" />
+            <Entry Placeholder="Email" Keyboard="Email" Text="{Binding Email}" IsReadOnly="True" />
             <Entry Placeholder="Phone Number" Keyboard="Telephone" Text="{Binding PhoneNumber}" />
             <Entry Placeholder="Specialty" Text="{Binding Specialty}" />
-
-            <!-- Additional Fields as Needed -->
             <Entry Placeholder="Gender" Text="{Binding Gender}" />
             <Entry Placeholder="Physical Address" Text="{Binding PhysicalAddress}" />
             <DatePicker Date="{Binding DateOfBirth}" />
 
-            <!-- Signup Button -->
-            <Button Text="Sign Up" Command="{Binding SignUpCommand}" HorizontalOptions="FillAndExpand" Margin="0,20,0,0" />
+            <!-- Save Button -->
+            <Button Text="Save" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand" Margin="0,20,0,0" />
         </StackLayout>
     </ScrollView>
 </ContentPage>

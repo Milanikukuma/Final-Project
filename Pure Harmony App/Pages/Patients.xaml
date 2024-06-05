@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Pure_Harmony_App.ViewModels"
+             x:Class="Pure_Harmony_App.Pages.Patients"
+             Title="Patients">
+    <ContentPage.BindingContext>
+        <local:PatientViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout Padding="10">
+        <Label Text="Patients" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" Margin="10" />
+
+        <ListView ItemsSource="{Binding Patients}" HasUnevenRows="True" ItemSelected="OnPatientSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding FullName}" Detail="{Binding Email}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

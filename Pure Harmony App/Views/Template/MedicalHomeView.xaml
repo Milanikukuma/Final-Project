@@ -3,10 +3,67 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Pure_Harmony_App.Views.Template.MedicalHomeView"
              Title="MedicalHomeView">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Profile"
+                     IconImageSource="tb.jpg"
+                     Order="Primary"
+                     Priority="0"
+                     Clicked="OnProfileButtonClicked" />
+    </ContentPage.ToolbarItems>
+    <Grid Padding="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Scrollable content -->
+        <ScrollView Grid.Row="0">
+            <VerticalStackLayout Padding="10">
+                <Label 
+                    Text="Welcome, Dr. [Name]"
+                    FontSize="24"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    Margin="10" />
+                <!-- Add more content here if needed -->
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <!-- Bottom buttons -->
+        <StackLayout Orientation="Horizontal"
+                     BackgroundColor="Transparent"
+                     VerticalOptions="End"
+                     HorizontalOptions="FillAndExpand"
+                     Margin="20,0,20,0"
+                     Grid.Row="1">
+            <Button Text="Patients"
+                    BackgroundColor="Transparent"
+                    TextColor="Gray"
+                    BorderColor="Transparent"
+                    BorderWidth="0"
+                    CornerRadius="0"
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="PatientsButton_Clicked" />
+            <Button Text="Treatment Plans"
+                    BackgroundColor="Transparent"
+                    TextColor="Gray"
+                    BorderColor="Transparent"
+                    BorderWidth="0"
+                    CornerRadius="0"
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="TreatmentPlansButton_Clicked" />
+            <Button Text="Alerts"
+                    BackgroundColor="Transparent"
+                    TextColor="Gray"
+                    BorderColor="Transparent"
+                    BorderWidth="0"
+                    CornerRadius="0"
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="AlertsButton_Clicked" />
+        </StackLayout>
+    </Grid>
 </ContentPage>

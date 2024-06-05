@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pure_Harmony_App.Pages.PatientProfilePage"
+             Title="PatientProfilePage">
+    <StackLayout Padding="10">
+        <Label Text="{Binding FullName}" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" Margin="10" />
+        <Label Text="{Binding DateOfBirth, StringFormat='Date of Birth: {0:MMMM dd, yyyy}'}" FontSize="18" HorizontalOptions="Center" Margin="10" />
+        <Label Text="{Binding Gender, StringFormat='Gender: {0}'}" FontSize="18" HorizontalOptions="Center" Margin="10" />
+        <Label Text="{Binding Email, StringFormat='Email: {0}'}" FontSize="18" HorizontalOptions="Center" Margin="10" />
+        <Label Text="{Binding PhoneNumber, StringFormat='Phone: {0}'}" FontSize="18" HorizontalOptions="Center" Margin="10" />
+        <Label Text="{Binding Address, StringFormat='Address: {0}'}" FontSize="18" HorizontalOptions="Center" Margin="10" />
+    </StackLayout>
+</ContentPage>
