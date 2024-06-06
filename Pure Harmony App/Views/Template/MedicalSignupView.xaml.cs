@@ -8,7 +8,7 @@ public partial class MedicalSignupView : ContentPage
     public MedicalSignupView(SignUpViewModel vm)
     {
         InitializeComponent();
-        _viewModels = vm;
+        _viewModels = vm;                                                                                                                                                                 
         //  _viewModel = new LoginViewModel();
         BindingContext = vm;
     }

@@ -120,7 +120,7 @@ namespace Pure_Harmony_App.ViewModels
      else if (userType == "Medical Professional")
      {
                 // Navigate to medical professional sign-up page
-                await Shell.Current.GoToAsync("medicalhomeview");
+                await Shell.Current.GoToAsync("medicalsignupview");
          //await App.Current.MainPage.Navigation.PushAsync(new PatientSignUpPage());
      }
  }
