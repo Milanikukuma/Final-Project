@@ -70,19 +70,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Pages\PatientFolder\AboutUs.xaml.cs">
-	    <DependentUpon>%(Filename)</DependentUpon>
-	  </Compile>
 	  <Compile Update="Pages\PatientFolder\PatientSignupPage.xaml.cs">
 	    <DependentUpon>PatientSignUpPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Pages\MedicalFolder\AboutUs.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Pages\PatientFolder\AboutUs.xaml">
+	  <MauiXaml Update="Pages\AboutUs.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\PatientFolder\Alerts.xaml">

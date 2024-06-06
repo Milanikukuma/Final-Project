@@ -101,7 +101,7 @@ namespace Pure_Harmony_App.Views
 
         private void AboutUsButton_Clicked(object sender, EventArgs e)
         {
-           // Navigation.PushAsync(new AboutUs());
+            Navigation.PushAsync(new AboutUs());
         }
     }
 }

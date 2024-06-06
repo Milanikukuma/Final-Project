@@ -1,4 +1,4 @@
-namespace Pure_Harmony_App.Pages.MedicalFolder;
+namespace Pure_Harmony_App.Pages;
 
 public partial class AboutUs : ContentPage
 {
