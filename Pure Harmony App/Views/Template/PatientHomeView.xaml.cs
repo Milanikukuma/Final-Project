@@ -1,5 +1,4 @@
 using Pure_Harmony_App.Pages;
-using Pure_Harmony_App.Pages.MedicalFolder;
 using Pure_Harmony_App.Pages.PatientFolder;
 using Pure_Harmony_App.Service;
 using Pure_Harmony_App.ViewModels;
