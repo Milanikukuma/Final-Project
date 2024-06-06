@@ -46,7 +46,7 @@
                     VerticalOptions="FillAndExpand"
                     HorizontalOptions="FillAndExpand"
                     Clicked="PatientsButton_Clicked" />
-            <Button Text="Treatment Plans"
+            <Button Text="About Us"
                     BackgroundColor="Transparent"
                     TextColor="Gray"
                     BorderColor="Transparent"
@@ -54,7 +54,7 @@
                     CornerRadius="0"
                     VerticalOptions="FillAndExpand"
                     HorizontalOptions="FillAndExpand"
-                    Clicked="TreatmentPlansButton_Clicked" />
+                    Clicked="AboutUsButton_Clicked" />
             <Button Text="Alerts"
                     BackgroundColor="Transparent"
                     TextColor="Gray"

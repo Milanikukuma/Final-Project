@@ -1,4 +1,5 @@
 using Pure_Harmony_App.Pages;
+using Pure_Harmony_App.Pages.MedicalFolder;
 
 namespace Pure_Harmony_App.Views.Template;
 
@@ -14,10 +15,7 @@ public partial class MedicalHomeView : ContentPage
         Navigation.PushAsync(new Patients());
     }
 
-    private void TreatmentPlansButton_Clicked(object sender, EventArgs e)
-    {
-
-    }
+    
 
     private void AlertsButton_Clicked(object sender, EventArgs e)
     {
@@ -27,5 +25,10 @@ public partial class MedicalHomeView : ContentPage
     private void OnProfileButtonClicked(object sender, EventArgs e)
     {
         Navigation.PushAsync(new ProfilePage());
+    }
+
+    private void AboutUsButton_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new AboutUs());
     }
 }
