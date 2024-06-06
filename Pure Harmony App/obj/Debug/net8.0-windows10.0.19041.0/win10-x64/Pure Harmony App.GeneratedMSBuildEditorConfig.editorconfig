@@ -54,6 +54,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.Pages.Med
 build_metadata.AdditionalFiles.TargetPath = Pages\MedicalFolder\ProfilePage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\MedicalFolder\ProfilePage.xaml
 
+[C:/Users/Zintle Xabendlini/source/repos/Final-Project/Pure Harmony App/Pages/PatientFolder/AboutUs.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.Pages.PatientFolder.AboutUs.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\PatientFolder\AboutUs.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\PatientFolder\AboutUs.xaml
+
 [C:/Users/Zintle Xabendlini/source/repos/Final-Project/Pure Harmony App/Pages/PatientFolder/Alerts.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.Pages.PatientFolder.Alerts.xaml
@@ -77,6 +83,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.Pages.PatientFolder.PatientSignupPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\PatientFolder\PatientSignupPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\PatientFolder\PatientSignupPage.xaml
+
+[C:/Users/Zintle Xabendlini/source/repos/Final-Project/Pure Harmony App/Pages/PatientFolder/Reminders.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Pure_Harmony_App.Pages.PatientFolder.Reminders.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\PatientFolder\Reminders.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\PatientFolder\Reminders.xaml
 
 [C:/Users/Zintle Xabendlini/source/repos/Final-Project/Pure Harmony App/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

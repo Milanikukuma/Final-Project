@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pure_Harmony_App.Pages.PatientFolder.AboutUs"
+             Title="About Us">
+    <ScrollView>
+        <VerticalStackLayout Padding="20">
+            <Label Text="Welcome to Med Track TB" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" />
+            <Label Text="Tagline: Empowering TB Care through Technology and Knowledge" FontSize="18" FontAttributes="Italic" Margin="0,10,0,10" />
+
+            <Label Text="Introduction:" FontSize="20" FontAttributes="Bold" />
+            <Label Text="Welcome to Med Track TB, your partner in managing TB treatment and care. Our app utilizes RFID technology to enhance medication adherence and patient monitoring. Learn more about TB and its management below." FontSize="16" />
+
+            <Label Text="TB Overview:" FontSize="20" FontAttributes="Bold" Margin="20,10,0,0" />
+            <Label Text="What is TB? Tuberculosis (TB) is a contagious infection caused by Mycobacterium tuberculosis that primarily affects the lungs." FontSize="16" />
+            <Label Text="Types of TB: Latent TB (asymptomatic) and Active TB (symptomatic)" FontSize="16" />
+            <Label Text="TB Symptoms: Coughing for three or more weeks, chest pain, coughing up blood, fever, night sweats, chills, fatigue, weight loss" FontSize="16" />
+            <Label Text="TB Treatment: Standard 6-month course of 4 antibiotics; drug-resistant TB requires longer treatment" FontSize="16" />
+
+            
+            <Label Text="Features Highlights:" FontSize="20" FontAttributes="Bold" Margin="20,10,0,0" />
+            <Label Text="Patient management, Communication tools, Analytics and insights, RFID technology for real-time medication tracking" FontSize="16" />
+
+            <Label Text="RFID Special Feature:" FontSize="20" FontAttributes="Bold" Margin="20,10,0,0" />
+            <Label Text="Our app uses RFID tags on medication packaging to track patient adherence. When a patient takes their medication, the RFID tag sends a signal to the app, alerting healthcare professionals in real-time." FontSize="16" />
+            <Label Text="This feature enables timely interventions, improving patient outcomes and reducing treatment failure." FontSize="16" />
+
+            <Label Text="Optional Tutorial:" FontSize="20" FontAttributes="Bold" Margin="20,10,0,0" />
+            <Label Text="Take a guided tour to learn how to use the app and its RFID features to enhance your patient care." FontSize="16" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

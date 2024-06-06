@@ -67,7 +67,7 @@
                     VerticalOptions="FillAndExpand"
                     HorizontalOptions="FillAndExpand"
                     Clicked="AlertsButton_Clicked" />
-            <Button Text="Educational Resources"
+            <Button Text="AboutUs"
                     BackgroundColor="Transparent"
                     TextColor="Gray"
                     BorderColor="Transparent"
@@ -75,7 +75,7 @@
                     CornerRadius="0"
                     VerticalOptions="FillAndExpand"
                     HorizontalOptions="FillAndExpand"
-                    Clicked="EducationalResourcesButton_Clicked" />
+                    Clicked="AboutUsButton_Clicked" />
         </StackLayout>
     </StackLayout>
 </ContentPage>
