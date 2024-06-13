@@ -1,13 +1,7 @@
-﻿using Pure_Harmony_App.Pages;
-using Pure_Harmony_App.Service;
-using Pure_Harmony_App.Views.Template;
-using System;
-using System.Collections.Generic;
+﻿using Pure_Harmony_App.Service;
+using Pure_Harmony_App.Views;
 using System.ComponentModel;
-using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Pure_Harmony_App.ViewModels
 {
@@ -89,12 +83,24 @@ namespace Pure_Harmony_App.ViewModels
                 if (user.UserTypeId == 1)
                 {
                     // Successful login, navigate to the main page
-                    await App.Current.MainPage.Navigation.PushAsync(new MedicalHomeView());
+                    var parameters = new ShellNavigationQueryParameters();
+                    parameters["UserType"] = user.UserTypeId.ToString();
+
+                    await Shell.Current.GoToAsync("patienthomeview", false, parameters);
+
+
+
+                    //await App.Current.MainPage.Navigation.PushAsync(new PatientHomeView());
                 }
                 else if (user.UserTypeId == 2)
 
                 {
-                    await App.Current.MainPage.Navigation.PushAsync(new MedicalHomeView());
+                    var parameters = new ShellNavigationQueryParameters();
+                    parameters["UserType"] = user.UserTypeId.ToString();
+
+                    await Shell.Current.GoToAsync("medicalhomeview",false,parameters);
+
+                    //await App.Current.MainPage.Navigation.PushAsync(new MedicalHomeView());
                 }
             }
             else
@@ -115,12 +121,22 @@ namespace Pure_Harmony_App.ViewModels
      {
                 // Navigate to patient sign-up pageawait Shell.Current.GoToAsync("patientsignuppage")
                 await Shell.Current.GoToAsync("patientsignuppage");
-         //await App.Current.MainPage.Navigation.PushAsync(new MedicalSignUp());
-     }
-     else if (userType == "Medical Professional")
+                //await App.Current.MainPage.Navigation.PushAsync(new MedicalSignUp());
+
+                var parameters = new ShellNavigationQueryParameters();
+                parameters["UserType"] = "Patient";
+
+                await Shell.Current.GoToAsync("patientsignuppage", parameters);
+
+            }
+            else if (userType == "Medical Professional")
      {
                 // Navigate to medical professional sign-up page
-                await Shell.Current.GoToAsync("medicalsignupview");
+                var parameters = new ShellNavigationQueryParameters();
+                parameters["UserType"] = "MedicalProfessional";
+
+
+                await Shell.Current.GoToAsync("medicalsignupview", parameters);
          //await App.Current.MainPage.Navigation.PushAsync(new PatientSignUpPage());
      }
  }
