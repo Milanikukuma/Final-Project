@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using CommunityToolkit.Maui;
+using Microsoft.Extensions.Logging;
 using Pure_Harmony_App.Pages;
 using Pure_Harmony_App.Service;
 using Pure_Harmony_App.ViewModels;
@@ -14,6 +15,7 @@ namespace Pure_Harmony_App
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                    .UseMauiCommunityToolkit()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

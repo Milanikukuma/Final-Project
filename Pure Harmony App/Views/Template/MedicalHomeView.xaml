@@ -1,69 +1,219 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="Pure_Harmony_App.Views.Template.MedicalHomeView"
-             Title="MedicalHomeView">
+             Title="Welcome To MedTrack TB"
+             BackgroundColor="LightSkyBlue">
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Profile"
-                     IconImageSource="tb.jpg"
+                     IconImageSource="profilemedpic.jpg"
                      Order="Primary"
                      Priority="0"
                      Clicked="OnProfileButtonClicked" />
     </ContentPage.ToolbarItems>
-    <Grid Padding="10">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
 
-        <!-- Scrollable content -->
-        <ScrollView Grid.Row="0">
-            <VerticalStackLayout Padding="10">
-                <Label 
-                    Text="Welcome, Dr. [Name]"
-                    FontSize="24"
-                    FontAttributes="Bold"
-                    HorizontalOptions="Center"
-                    Margin="10" />
-                <!-- Add more content here if needed -->
-            </VerticalStackLayout>
-        </ScrollView>
+    <ScrollView>
+        <StackLayout Padding="10">
+            <!-- Welcome Message -->
+            <Frame BackgroundColor="Transparent"
+                   HasShadow="False"
+                   CornerRadius="15"
+                   Padding="15,10"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start"
+                   Margin="20">
+                <StackLayout>
+                    <Label Text="Welcome Doctor to MedTrack TB"
+                           TextColor="Black"
+                           FontSize="20"
+                           FontAttributes="Bold" />
+                    <Label Text="Empowering TB Care through Technology and Knowledge"
+                           TextColor="Black"
+                           FontSize="16"
+                           FontAttributes="Bold" />
+                </StackLayout>
+            </Frame>
 
-        <!-- Bottom buttons -->
-        <StackLayout Orientation="Horizontal"
-                     BackgroundColor="Transparent"
-                     VerticalOptions="End"
-                     HorizontalOptions="FillAndExpand"
-                     Margin="20,0,20,0"
-                     Grid.Row="1">
-            <Button Text="Patients"
-                    BackgroundColor="Transparent"
-                    TextColor="Gray"
-                    BorderColor="Transparent"
-                    BorderWidth="0"
-                    CornerRadius="0"
-                    VerticalOptions="FillAndExpand"
-                    HorizontalOptions="FillAndExpand"
-                    Clicked="PatientsButton_Clicked" />
-            <Button Text="About Us"
-                    BackgroundColor="Transparent"
-                    TextColor="Gray"
-                    BorderColor="Transparent"
-                    BorderWidth="0"
-                    CornerRadius="0"
-                    VerticalOptions="FillAndExpand"
-                    HorizontalOptions="FillAndExpand"
-                    Clicked="AboutUsButton_Clicked" />
-            <Button Text="Alerts"
-                    BackgroundColor="Transparent"
-                    TextColor="Gray"
-                    BorderColor="Transparent"
-                    BorderWidth="0"
-                    CornerRadius="0"
-                    VerticalOptions="FillAndExpand"
-                    HorizontalOptions="FillAndExpand"
-                    Clicked="AlertsButton_Clicked" />
+            <!-- Features Highlights -->
+            <Frame BackgroundColor="WhiteSmoke"
+                   HasShadow="True"
+                   CornerRadius="10"
+                   Padding="10"
+                   Margin="10">
+                <StackLayout>
+                    <Label Text="• Easily track patient progress and treatment adherence"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            Margin="5,5,5,0" />
+                    <Label Text="• Access relevant guidelines and protocols at your fingertips"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            Margin="5,0,5,0" />
+                    <Label Text="• Stay up-to-date with the latest research and news in TB treatment"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            Margin="5,0,5,0" />
+                    <Label Text="• Manage your schedule and patient appointments with ease"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            Margin="5,0,5,0" />
+                    <Label Text="• Collaborate with other healthcare professionals for better patient care"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            Margin="5,0,5,0" />
+                </StackLayout>
+            </Frame>
+
+            <Frame BackgroundColor="WhiteSmoke"
+                   HasShadow="True"
+                   CornerRadius="10"
+                   Padding="10"
+                   Margin="10">
+                <StackLayout>
+                    <Label Text="We're committed to helping you provide the best possible care for your patients"
+                            FontSize="17"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            Margin="5,0,5,0" />
+                    <Label Text="Scroll down to explore the app and discover all of the features and resources available to you"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            Margin="5,0,5,5" />
+                </StackLayout>
+            </Frame>
+
+            <!-- RFID Special Feature -->
+            <Frame BackgroundColor="LightBlue"
+                   HasShadow="True"
+                   CornerRadius="10"
+                   Padding="10"
+                   Margin="10">
+                <StackLayout>
+                    <Label Text="RFID Special Feature:"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           Margin="5,5,5,0" />
+                    <Label Text="Our app uses RFID tags on medication packaging to track patient adherence. When a patient takes their medication, the RFID tag sends a signal to the app, alerting healthcare professionals in real-time."
+                           FontSize="14"
+                           HorizontalOptions="Center"
+                           Margin="5,0,5,5" />
+                    <Label Text="This feature enables timely interventions, improving patient outcomes and reducing treatment failure."
+                           FontSize="14"
+                           HorizontalOptions="Center"
+                           Margin="5,0,5,5" />
+                </StackLayout>
+            </Frame>
+
+            <!-- Other content -->
+            <Frame BackgroundColor="WhiteSmoke"
+                   HasShadow="True"
+                   CornerRadius="10"
+                   Padding="10"
+                   Margin="10,20,0,20">
+                <StackLayout>
+                    
+                    <Label Text="Notifications" FontSize="16" FontAttributes="Bold" HorizontalOptions="Center" Margin="5,5,5,0" />
+                    <Label Text="You have 2 new notifications." FontSize="14" HorizontalOptions="Center" Margin="5,0,5,5" />
+                </StackLayout>
+            </Frame>
+
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center"
+                         Margin="0,20,0,0">
+                <Button Clicked="OnVistWebsiteClicked" Background="Transparent"
+                        ImageSource="researchpic.jpg"
+                        BackgroundColor="#837e7c"
+                        TextColor="White"
+                        BorderColor="Transparent"
+                        BorderWidth="0"
+                        CornerRadius="25"
+                        Margin="0,0,10,0"
+                        Padding="10"
+                        WidthRequest="100"
+                        HeightRequest="100" />
+
+                <Button Clicked="OnVisttheWebsiteClicked" Background="Transparent"
+                        ImageSource="tbresearch.jpg"
+                        BackgroundColor="#837e7c"
+                        TextColor="White"
+                        BorderColor="Transparent"
+                        BorderWidth="0"
+                        CornerRadius="25"
+                        Margin="0,0,10,0"
+                        Padding="10"
+                        WidthRequest="100"
+                        HeightRequest="100" />
+
+                <Button Clicked="OnVistaWebsiteClicked" Background="Transparent"
+                        ImageSource="coughresearch.jpg"
+                        TextColor="White"
+                        BorderColor="Transparent"
+                        BorderWidth="0"
+                        CornerRadius="25"
+                        Margin="0,10,0,5"
+                        Padding="10"
+                        WidthRequest="100"
+                        HeightRequest="100" />
+            </StackLayout>
+
+            <!-- Tabs -->
+            <Grid RowDefinitions="Auto" ColumnDefinitions="*,*,*">
+                <!-- Patients Tab -->
+                <Frame Grid.Column="0"
+                       CornerRadius="25"
+                       Padding="15,10"
+                       BackgroundColor="#837e7c"
+                       HasShadow="True">
+                    <Label Text="Patients"
+                           TextColor="White"
+                           FontSize="18"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center" />
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="PatientsButton_Clicked" />
+                    </Frame.GestureRecognizers>
+                </Frame>
+
+                <!-- Alerts Tab -->
+                <Frame Grid.Column="1"
+                       CornerRadius="25"
+                       Padding="15,10"
+                       BackgroundColor="#837e7c"
+                       HasShadow="True">
+                    <Label Text="Alerts"
+                           TextColor="White"
+                           FontSize="18"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center" />
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AlertsButton_Clicked" />
+                    </Frame.GestureRecognizers>
+                </Frame>
+
+                <!-- About Us Tab -->
+                <Frame Grid.Column="2"
+                       CornerRadius="25"
+                       Padding="15,10"
+                       BackgroundColor="#837e7c"
+                       HasShadow="True">
+                    <Label Text="Menu"
+                           TextColor="White"
+                           FontSize="18"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center" />
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AboutUsButton_Clicked" />
+                    </Frame.GestureRecognizers>
+                </Frame>
+            </Grid>
         </StackLayout>
-    </Grid>
+    </ScrollView>
 </ContentPage>

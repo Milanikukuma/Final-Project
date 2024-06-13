@@ -57,12 +57,22 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\bg.jpeg" />
+	  <None Remove="Resources\Images\coughresearch.jpg" />
+	  <None Remove="Resources\Images\docwallpaper.jpg" />
+	  <None Remove="Resources\Images\listofpatients.jpg" />
+	  <None Remove="Resources\Images\medwallpaper.jpg" />
+	  <None Remove="Resources\Images\patient.jpg" />
+	  <None Remove="Resources\Images\profilemedpic.jpg" />
+	  <None Remove="Resources\Images\researchpic.jpg" />
 	  <None Remove="Resources\Images\TB.jpg" />
+	  <None Remove="Resources\Images\tbresearch.jpg" />
+	  <None Remove="Resources\Images\TreatmentPlans.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
-		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
+		<PackageReference Include="CommunityToolkit.Maui" Version="9.0.1" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.40" />
+		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.40" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
 		<PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
 		<PackageReference Include="SQLiteNetExtensions" Version="2.1.0" />

@@ -1,33 +1,137 @@
-<?xml version="1.0" encoding="utf-8" ?>
-
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Pure_Harmony_App.Pages.MedicalFolder.AboutUs"
-             Title="About Us">
-    <ScrollView>
-        <VerticalStackLayout Padding="20">
-            <Label Text="Welcome to Med Track TB" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" />
-            <Label Text="Tagline: Empowering TB Care through Technology and Knowledge" FontSize="18" FontAttributes="Italic" Margin="0,10,0,10" />
+             Title="About Us and Menu"
+             BackgroundColor="LightSkyBlue">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10">
+                <Frame BackgroundColor="Transparent"
+                       HasShadow="False"
+                       CornerRadius="15"
+                       Padding="15,10"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start"
+                       Margin="20">
+                    <StackLayout>
+                        <Label Text="Hello, Welcome to MedTrack TB"
+                               TextColor="Black"
+                               FontSize="20"
+                               FontAttributes="Bold" />
+                    </StackLayout>
+                </Frame>
 
-            <Label Text="Introduction:" FontSize="20" FontAttributes="Bold" />
-            <Label Text="Welcome to Med Track TB, your partner in managing TB treatment and care. Our app utilizes RFID technology to enhance medication adherence and patient monitoring. Learn more about TB and its management below." FontSize="16" />
+                <Frame BackgroundColor="WhiteSmoke" 
+                       HasShadow="True" 
+                       CornerRadius="20"
+                       Padding="20"
+                       Margin="10">
+                    <VerticalStackLayout Padding="20">
+                        <Label Text="About Us" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+                </Frame>
 
-            <Label Text="TB Overview:" FontSize="20" FontAttributes="Bold" Margin="20,10,0,0" />
-            <Label Text="What is TB? Tuberculosis (TB) is a contagious infection caused by Mycobacterium tuberculosis that primarily affects the lungs." FontSize="16" />
-            <Label Text="Types of TB: Latent TB (asymptomatic) and Active TB (symptomatic)" FontSize="16" />
-            <Label Text="TB Symptoms: Coughing for three or more weeks, chest pain, coughing up blood, fever, night sweats, chills, fatigue, weight loss" FontSize="16" />
-            <Label Text="TB Treatment: Standard 6-month course of 4 antibiotics; drug-resistant TB requires longer treatment" FontSize="16" />
+                <Frame BackgroundColor="WhiteSmoke"
+                       HasShadow="True"
+                       CornerRadius="10"
+                       Padding="10"
+                       Margin="10">
+                    <VerticalStackLayout Padding="20">
+                        <Label Text="Mission Statement:" FontSize="18" FontAttributes="Bold" Margin="0,10,0,0" />
+                        <Label Text="At MedTrack TB, our mission is to revolutionize TB treatment management through innovation and technology. We're dedicated to empowering individuals to take control of their health by providing them with a user-friendly platform that simplifies medication tracking and enhances treatment compliance." FontSize="16" />
+                    </VerticalStackLayout>
+                </Frame>
 
-            
-            <Label Text="Features Highlights:" FontSize="20" FontAttributes="Bold" Margin="20,10,0,0" />
-            <Label Text="Patient management, Communication tools, Analytics and insights, RFID technology for real-time medication tracking" FontSize="16" />
+                <Frame BackgroundColor="WhiteSmoke"
+                       HasShadow="True"
+                       CornerRadius="10"
+                       Padding="10"
+                       Margin="10">
+                    <VerticalStackLayout Padding="20">
+                        <Label Text="Value Proposition:" FontSize="18" FontAttributes="Bold" Margin="0,10,0,0" />
+                        <Label Text="MedTrack TB offers a comprehensive solution for managing TB treatment with ease. Our app enables users to stay on top of their medication schedule, receive timely reminders, and access educational resources to support their journey to better health. With MedTrack TB, taking control of your TB treatment has never been easier." FontSize="16" />
+                    </VerticalStackLayout>
+                </Frame>
 
-            <Label Text="RFID Special Feature:" FontSize="20" FontAttributes="Bold" Margin="20,10,0,0" />
-            <Label Text="Our app uses RFID tags on medication packaging to track patient adherence. When a patient takes their medication, the RFID tag sends a signal to the app, alerting healthcare professionals in real-time." FontSize="16" />
-            <Label Text="This feature enables timely interventions, improving patient outcomes and reducing treatment failure." FontSize="16" />
+                <Frame BackgroundColor="WhiteSmoke"
+                       HasShadow="True"
+                       CornerRadius="10"
+                       Padding="10"
+                       Margin="10">
+                    <VerticalStackLayout Padding="20">
+                        <Label Text="Inspiration:" FontSize="18" FontAttributes="Bold" Margin="0,10,0,0" />
+                        <Label Text="MedTrack TB was born from a shared passion for leveraging technology to address critical healthcare challenges. As women in tech, our team recognized the need for a modern solution to improve TB treatment compliance and ensure better health outcomes for individuals worldwide. Inspired by our collective expertise and commitment to making a positive impact, we embarked on the journey to create MedTrack TB." FontSize="16" />
+                    </VerticalStackLayout>
+                </Frame>
 
-            <Label Text="Optional Tutorial:" FontSize="20" FontAttributes="Bold" Margin="20,10,0,0" />
-            <Label Text="Take a guided tour to learn how to use the app and its RFID features to enhance your patient care." FontSize="16" />
-        </VerticalStackLayout>
-    </ScrollView>
+                <!--<Frame BackgroundColor="WhiteSmoke"
+                       HasShadow="True"
+                       CornerRadius="10"
+                       Padding="10"
+                       Margin="10">
+                    <VerticalStackLayout Padding="20">
+                        <Label Text="About MedTrack TB" FontSize="18" FontAttributes="Bold" Margin="0,10,0,0" />
+                        <Label Text="MedTrack TB: Your partner for TB treatment compliance. Our app helps patients stick to their medication schedule with ease, ensuring better treatment outcomes. Join us in revolutionizing TB care for a healthier future." FontSize="16" />
+                    </VerticalStackLayout>
+                </Frame>-->
+
+                <Frame BackgroundColor="WhiteSmoke"
+                       HasShadow="True"
+                       CornerRadius="10"
+                       Padding="10"
+                       Margin="10">
+                    <VerticalStackLayout Padding="20">
+                        <Label Text="Menu" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,20,0,0" />
+                        <Label Text="About MedTrack TB" FontSize="16" FontAttributes="Bold" HorizontalOptions="Center" Margin="5,0,5,0" />
+                        <Label Text="Features" FontSize="16" FontAttributes="Bold" HorizontalOptions="Center" Margin="5,0,5,0" />
+                        <Label Text="Contact Us" FontSize="16" FontAttributes="Bold" HorizontalOptions="Center" Margin="5,0,5,0" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="WhiteSmoke"
+                       HasShadow="True"
+                       CornerRadius="10"
+                       Padding="10"
+                       Margin="10">
+                    <VerticalStackLayout Padding="20">
+                        <Label Text="About MedTrack TB" FontSize="18" FontAttributes="Bold" Margin="0,10,0,0" />
+                        <Label Text="MedTrack TB: Your partner for TB treatment compliance. Our app helps patients stick to their medication schedule with ease, ensuring better treatment outcomes. Join us in revolutionizing TB care for a healthier future." FontSize="16" />
+                    </VerticalStackLayout>
+                </Frame>
+
+
+                <Frame BackgroundColor="WhiteSmoke"
+                       HasShadow="True"
+                       CornerRadius="10"
+                       Padding="10"
+                       Margin="10">
+                    <VerticalStackLayout Padding="20">
+                        <Label Text="Features" FontSize="18" FontAttributes="Bold" Margin="0,10,0,0" />
+                        <Label Text="Customizable Reminders" FontSize="16" FontAttributes="Bold" HorizontalOptions="Center" Margin="5,0,5,0" />
+                        <Label Text="Progress Tracking" FontSize="16" FontAttributes="Bold" HorizontalOptions="Center" Margin="5,0,5,0" />
+                        <Label Text="Educational Resources" FontSize="16" FontAttributes="Bold" HorizontalOptions="Center" Margin="5,0,5,0" />
+                        <Label Text="User-Friendly Interface" FontSize="16" FontAttributes="Bold" HorizontalOptions="Center" Margin="5,0,5,0" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="WhiteSmoke"
+                       HasShadow="True"
+                       CornerRadius="10"
+                       Padding="10"
+                       Margin="10">
+                    <VerticalStackLayout Padding="20">
+                        <Label Text="Contact Us" FontSize="18" FontAttributes="Bold" Margin="0,10,0,0" />
+                        <Label Text="Contact Us:" FontSize="16" FontAttributes="Bold" HorizontalOptions="Center" Margin="5,0,5,0" />
+                        <Label Text="Email: info@medtracktb.com" FontSize="16" HorizontalOptions="Center" Margin="5,0,5,0" />
+                        <Label Text="Phone: +1 (555) 123-4567" FontSize="16" HorizontalOptions="Center" Margin="5,0,5,0" />
+                        <Label Text="Address: 123 MedTrack Avenue, Cityville, State, Zip Code" FontSize="16" HorizontalOptions="Center" Margin="5,0,5,0" />
+                        <Label Text="Follow us on social media:" FontSize="16" FontAttributes="Bold" HorizontalOptions="Center" Margin="5,0,5,0" />
+                        <Label Text="Facebook: @MedTrackTB" FontSize="16" HorizontalOptions="Center" Margin="5,0,5,0" />
+                        <Label Text="Twitter: @MedTrack_TB" FontSize="16" HorizontalOptions="Center" Margin="5,0,5,0" />
+                        <Label Text="Instagram: @MedTrackTB_Official" FontSize="16" HorizontalOptions="Center" Margin="5,0,5,0" />
+                    </VerticalStackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
 </ContentPage>

@@ -30,5 +30,30 @@ public partial class MedicalHomeView : ContentPage
     private void AboutUsButton_Clicked(object sender, EventArgs e)
     {
         Navigation.PushAsync(new AboutUs());
+
+    }
+
+
+    async void OnVistWebsiteClicked(object sender, EventArgs e)
+    {
+        string websiteURI = "https://pubmed.ncbi.nlm.nih.gov/";
+
+
+        await Launcher. OpenAsync(websiteURI);
+    }
+
+    async void OnVisttheWebsiteClicked(object sender, EventArgs e)
+    {
+        string websiteURI = "https://www.cdc.gov/tb/default.htm";
+        
+
+        await Launcher.OpenAsync(websiteURI);
+    }
+
+    async void OnVistaWebsiteClicked(object sender, EventArgs e)
+    {
+        string websiteURI = "https://www.who.int/health-topics/tuberculosis#tab=tab_1";
+
+        await Launcher.OpenAsync(websiteURI);
     }
 }
