@@ -3,10 +3,41 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Pure_Harmony_App.Pages.MedicationPage"
              Title="MedicationPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Grid BackgroundColor="#BFDDCE">
+        <!-- Main Layout -->
+        <StackLayout VerticalOptions="Start" HorizontalOptions="Center" Margin="0,50,0,0" WidthRequest="300">
+
+            <!-- Medication Name Heading -->
+            <Label Text="Medication Name" FontAttributes="Bold" FontSize="20" HorizontalOptions="Center" Margin="0,0,0,10"/>
+
+            <!-- Search Bar -->
+            <Entry x:Name="SearchBar" Placeholder="Add Medication Name" Margin="0,0,0,20" HeightRequest="30"/>
+
+            <!-- Medication Type Heading -->
+            <Label Text="Choose the Medication Type" FontAttributes="Bold" FontSize="16" Margin="0,0,0,10"/>
+
+            <!-- Common Forms Heading -->
+            <Label Text="Common Forms" FontAttributes="Bold" FontSize="14" Margin="0,0,0,5"/>
+
+            <!-- Common Forms Buttons -->
+            <StackLayout Margin="0,0,0,20">
+                <Button Text="Capsule" Margin="0,5,0,5" HeightRequest="40" BackgroundColor="#226F81" TextColor="White"/>
+                <Button Text="Tablet" Margin="0,5,0,5" HeightRequest="40" BackgroundColor="#226F81" TextColor="White"/>
+                <Button Text="Liquid" Margin="0,5,0,5" HeightRequest="40" BackgroundColor="#226F81" TextColor="White"/>
+            </StackLayout>
+
+            <!-- More Forms Heading -->
+            <Label Text="More Forms" FontAttributes="Bold" FontSize="14" Margin="0,0,0,5"/>
+
+            <!-- More Forms Buttons -->
+            <StackLayout Margin="0,0,0,20">
+                <Button Text="Injection" Margin="0,5,0,5" HeightRequest="40" BackgroundColor="#226F81" TextColor="White"/>
+                <Button Text="Inhaler" Margin="0,5,0,5" HeightRequest="40" BackgroundColor="#226F81" TextColor="White"/>
+            </StackLayout>
+
+            <!-- Next Button -->
+            <Button Text="Next" Margin="0,5,0,5" HeightRequest="40" BackgroundColor="#226F81" TextColor="White"/>
+        </StackLayout>
+    </Grid>
+
 </ContentPage>

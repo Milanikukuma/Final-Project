@@ -1,4 +1,5 @@
 using Pure_Harmony_App.Pages;
+using Pure_Harmony_App.Pages.PatientFolder;
 using Pure_Harmony_App.Service;
 using Pure_Harmony_App.ViewModels;
 using System;
@@ -82,22 +83,24 @@ namespace Pure_Harmony_App.Views
 
         private void MedRemindersButton_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new Reminders());
         }
 
         private void AlertsButton_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new Alerts());
         }
 
-        private void EducationalResourcesButton_Clicked(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private async void MedicationButton_Clicked(object sender, EventArgs e)
         {
-            //await Navigation.PushAsync(new MedicalSignUp());
+            Navigation.PushAsync(new MedicationPage());
+        }
+
+        private void AboutUsButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AboutUs());
         }
     }
 }

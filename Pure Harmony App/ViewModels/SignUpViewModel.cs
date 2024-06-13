@@ -10,6 +10,7 @@ using System.Windows.Input;
 
 namespace Pure_Harmony_App.ViewModels
 {
+    [QueryProperty("UserType","UserType")]
     public class SignUpViewModel : BaseViewModel
     {
         private readonly Localdatabase _localdatabase;
@@ -164,11 +165,12 @@ namespace Pure_Harmony_App.ViewModels
             // Navigate to the appropriate page based on user type
             if (userType.UserTypeId == 1)
             {
-                await App.Current.MainPage.Navigation.PushAsync(new PatientHomeView());
+                await Shell.Current.GoToAsync("patienthomeview");
             }
             else if (userType.UserTypeId == 2)
             {
-                await App.Current.MainPage.Navigation.PushAsync(new MedicalHomeView());
+                await Shell.Current.GoToAsync("medicalhomeview");
+
             }
 
             // Display alert or handle UI interactions for successful sign-up (implementation not provided)

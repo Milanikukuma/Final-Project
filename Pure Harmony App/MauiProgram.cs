@@ -27,12 +27,18 @@ namespace Pure_Harmony_App
 #endif
             builder.Services.AddTransient<LoginView>();
             builder.Services.AddTransient<PatientHomeView>();
+            builder.Services.AddTransient<MedicalSignupView>();
             builder.Services.AddTransient<PatientSignUpPage>();
             
             builder.Services.AddSingleton<Localdatabase>();
             
             builder.Services.AddTransient<LoginViewModel>();
             builder.Services.AddTransient<SignUpViewModel>();
+            
+            builder.Services.AddSingleton<RfidReaderViewModel>();
+            
+
+
 
 
             return builder.Build();

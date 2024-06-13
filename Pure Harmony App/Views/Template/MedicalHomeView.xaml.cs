@@ -1,5 +1,4 @@
 using Pure_Harmony_App.Pages;
-using Pure_Harmony_App.Pages.MedicalFolder;
 
 namespace Pure_Harmony_App.Views.Template;
 
