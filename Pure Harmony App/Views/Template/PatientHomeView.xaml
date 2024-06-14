@@ -1,81 +1,256 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="Pure_Harmony_App.Views.PatientHomeView"
-             Title="PatientHomeView">
+             Title="Welcome to MedTrack TB"
+             BackgroundColor="LightSkyBlue">
 
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Profile"
+                     IconImageSource="profilemedpic.jpg"
+                     Order="Primary"
+                     Priority="0"
+                     Clicked="OnProfileButtonClicked" />
+    </ContentPage.ToolbarItems>
 
+    <ScrollView>
+        <StackLayout Padding="10">
+            <!-- Welcome Message -->
+            <Frame BackgroundColor="Transparent"
+                   HasShadow="False"
+                   CornerRadius="15"
+                   Padding="15,10"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start"
+                   Margin="20">
+                <StackLayout>
+                    <Label Text="Welcome to MedTrack TB"
+                           TextColor="Black"
+                           FontSize="20"
+                           FontAttributes="Bold" />
+                    <Label Text="Empowering TB Care through Technology and Knowledge"
+                           TextColor="Black"
+                           FontSize="16"
+                           FontAttributes="Bold" />
+                </StackLayout>
+            </Frame>
 
+            <!-- Patient Details -->
+            <Frame BackgroundColor="WhiteSmoke"
+                   HasShadow="True"
+                   CornerRadius="10"
+                   Padding="10"
+                   Margin="10">
+                <StackLayout>
+                    <Label Text="Your Details" FontSize="16" FontAttributes="Bold" HorizontalOptions="Center" Margin="5,5,5,0" />
+                    <Label Text="First Name:" FontSize="14" HorizontalOptions="Start" Margin="5,0,5,0" />
+                    <Entry Text="{Binding Patient.FirstName}" IsReadOnly="True" />
+                    <Label Text="Last Name:" FontSize="14" HorizontalOptions="Start" Margin="5,0,5,0" />
+                    <Entry Text="{Binding Patient.LastName}" IsReadOnly="True" />
+                    <Label Text="Date of Birth:" FontSize="14" HorizontalOptions="Start" Margin="5,0,5,0" />
+                    <Entry Text="{Binding Patient.DateOfBirth, StringFormat='dd/MM/yyyy'}" IsReadOnly="True" />
+                    <Label Text="Gender:" FontSize="14" HorizontalOptions="Start" Margin="5,0,5,0" />
+                    <Entry Text="{Binding Patient.Gender}" IsReadOnly="True" />
+                    <Label Text="Email:" FontSize="14" HorizontalOptions="Start" Margin="5,0,5,0" />
+                    <Entry Text="{Binding Patient.Email}" IsReadOnly="True" />
+                    <Label Text="Phone Number:" FontSize="14" HorizontalOptions="Start" Margin="5,0,5,0" />
+                    <Entry Text="{Binding Patient.PhoneNumber}" IsReadOnly="True" />
+                    <Label Text="Address:" FontSize="14" HorizontalOptions="Start" Margin="5,0,5,0" />
+                    <Entry Text="{Binding Patient.Address}" IsReadOnly="True" />
+                </StackLayout>
+            </Frame>
 
+            <!-- Features Highlights -->
+            <Frame BackgroundColor="WhiteSmoke"
+                   HasShadow="True"
+                   CornerRadius="10"
+                   Padding="10"
+                   Margin="10">
+                <StackLayout>
+                    <Label Text="• Easily track medication adherence"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            Margin="5,5,5,0" />
+                    <Label Text="• Receive personalized reminders"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            Margin="5,0,5,0" />
+                    <Label Text="• Access important TB information and resources"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            Margin="5,0,5,0" />
+                    <Label Text="• Communicate directly with your healthcare provider"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            Margin="5,0,5,0" />
+                </StackLayout>
+            </Frame>
 
+            <Frame BackgroundColor="WhiteSmoke"
+                   HasShadow="True"
+                   CornerRadius="10"
+                   Padding="10"
+                   Margin="10">
+                <StackLayout>
+                    <Label Text="We're committed to helping you manage your TB treatment effectively"
+                            FontSize="17"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            Margin="5,0,5,0" />
+                    <Label Text="Scroll down to explore the app and discover all of the features and resources available to you"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            Margin="5,0,5,5" />
+                </StackLayout>
+            </Frame>
 
-    <StackLayout>
-        <!-- Patient details -->
-       
-            <Label Text="First Name:" />
-            <Entry Text="{Binding Patient.FirstName}" />
+            <!-- RFID Special Feature -->
+            <Frame BackgroundColor="LightBlue"
+                   HasShadow="True"
+                   CornerRadius="10"
+                   Padding="10"
+                   Margin="10">
+                <StackLayout>
+                    <Label Text="RFID Special Feature:"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           Margin="5,5,5,0" />
+                    <Label Text="MedTrack TB uses RFID tags on medication packaging to track your adherence. When you take your medication, the RFID tag sends a signal to the app, notifying your healthcare provider in real-time."
+                           FontSize="14"
+                           HorizontalOptions="Center"
+                           Margin="5,0,5,5" />
+                    <Label Text="This feature helps ensure timely interventions, improving treatment outcomes."
+                           FontSize="14"
+                           HorizontalOptions="Center"
+                           Margin="5,0,5,5" />
+                </StackLayout>
+            </Frame>
 
-            <Label Text="Last Name:" />
-            <Entry Text="{Binding Patient.LastName}" />
+            <!-- Other content -->
+            <Frame BackgroundColor="WhiteSmoke"
+                   HasShadow="True"
+                   CornerRadius="10"
+                   Padding="10"
+                   Margin="10,20,0,20">
+                <StackLayout>
 
-            <Label Text="Date of Birth:" />
-            <Entry Text="{Binding Patient.DateOfBirth}" />
+                    <Label Text="Notifications" FontSize="16" FontAttributes="Bold" HorizontalOptions="Center" Margin="5,5,5,0" />
+                    <Label Text="You have 2 new notifications." FontSize="14" HorizontalOptions="Center" Margin="5,0,5,5" />
+                </StackLayout>
+            </Frame>
 
-            <Label Text="Gender:" />
-            <Entry Text="{Binding Patient.Gender}" />
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center"
+                         Margin="0,20,0,0">
+                <Button Clicked="OnVistWebsiteClicked" Background="Transparent"
+                        ImageSource="researchpic.jpg"
+                        BackgroundColor="#837e7c"
+                        TextColor="White"
+                        BorderColor="Transparent"
+                        BorderWidth="0"
+                        CornerRadius="25"
+                        Margin="0,0,10,0"
+                        Padding="10"
+                        WidthRequest="100"
+                        HeightRequest="100" />
 
-            <Label Text="Email:" />
-            <Entry Text="{Binding Patient.Email}" />
+                <Button Clicked="OnVisttheWebsiteClicked" Background="Transparent"
+                        ImageSource="tbresearch.jpg"
+                        BackgroundColor="#837e7c"
+                        TextColor="White"
+                        BorderColor="Transparent"
+                        BorderWidth="0"
+                        CornerRadius="25"
+                        Margin="0,0,10,0"
+                        Padding="10"
+                        WidthRequest="100"
+                        HeightRequest="100" />
 
-            <Label Text="Phone Number:" />
-            <Entry Text="{Binding Patient.PhoneNumber}" />
+                <Button Clicked="OnVistaWebsiteClicked" Background="Transparent"
+                        ImageSource="coughresearch.jpg"
+                        TextColor="White"
+                        BorderColor="Transparent"
+                        BorderWidth="0"
+                        CornerRadius="25"
+                        Margin="0,10,0,5"
+                        Padding="10"
+                        WidthRequest="100"
+                        HeightRequest="100" />
+            </StackLayout>
 
-            <Label Text="Address:" />
-            <Entry Text="{Binding Patient.Address}" />
-       
+            <!-- Tabs -->
+            <Grid RowDefinitions="Auto" ColumnDefinitions="*,*,*,*">
+                <!-- Medication Tab -->
+                <Frame Grid.Column="0"
+                       CornerRadius="25"
+                       Padding="15,10"
+                       BackgroundColor="#837e7c"
+                       HasShadow="True">
+                    <Label Text="Medication"
+                           TextColor="White"
+                           FontSize="18"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center" />
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="MedicationButton_Clicked" />
+                    </Frame.GestureRecognizers>
+                </Frame>
 
-        <!-- Bottom buttons -->
-        <StackLayout Orientation="Horizontal"
-                     BackgroundColor="Transparent"
-                     VerticalOptions="End"
-                     HorizontalOptions="FillAndExpand">
+                <!-- Med Reminders Tab -->
+                <Frame Grid.Column="1"
+                       CornerRadius="25"
+                       Padding="15,10"
+                       BackgroundColor="#837e7c"
+                       HasShadow="True">
+                    <Label Text="Med Reminders"
+                           TextColor="White"
+                           FontSize="18"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center" />
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="MedRemindersButton_Clicked" />
+                    </Frame.GestureRecognizers>
+                </Frame>
 
-            <Button Text="Medication"
-                    BackgroundColor="Transparent"
-                    TextColor="Gray"
-                    BorderColor="Transparent"
-                    BorderWidth="0"
-                    CornerRadius="0"
-                    VerticalOptions="FillAndExpand"
-                    HorizontalOptions="FillAndExpand"
-                    Clicked="MedicationButton_Clicked" />
-            <Button Text="Med Reminders"
-                    BackgroundColor="Transparent"
-                    TextColor="Gray"
-                    BorderColor="Transparent"
-                    BorderWidth="0"
-                    CornerRadius="0"
-                    VerticalOptions="FillAndExpand"
-                    HorizontalOptions="FillAndExpand"
-                    Clicked="MedRemindersButton_Clicked" />
-            <Button Text="Alerts"
-                    BackgroundColor="Transparent"
-                    TextColor="Gray"
-                    BorderColor="Transparent"
-                    BorderWidth="0"
-                    CornerRadius="0"
-                    VerticalOptions="FillAndExpand"
-                    HorizontalOptions="FillAndExpand"
-                    Clicked="AlertsButton_Clicked" />
-            <Button Text="AboutUs"
-                    BackgroundColor="Transparent"
-                    TextColor="Gray"
-                    BorderColor="Transparent"
-                    BorderWidth="0"
-                    CornerRadius="0"
-                    VerticalOptions="FillAndExpand"
-                    HorizontalOptions="FillAndExpand"
-                    Clicked="AboutUsButton_Clicked" />
+                <!-- Alerts Tab -->
+                <Frame Grid.Column="2"
+                       CornerRadius="25"
+                       Padding="15,10"
+                       BackgroundColor="#837e7c"
+                       HasShadow="True">
+                    <Label Text="Alerts"
+                           TextColor="White"
+                           FontSize="18"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center" />
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AlertsButton_Clicked" />
+                    </Frame.GestureRecognizers>
+                </Frame>
+
+                <!-- About Us Tab -->
+                <Frame Grid.Column="3"
+                       CornerRadius="25"
+                       Padding="15,10"
+                       BackgroundColor="#837e7c"
+                       HasShadow="True">
+                    <Label Text="About Us"
+                           TextColor="White"
+                           FontSize="18"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center" />
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AboutUsButton_Clicked" />
+                    </Frame.GestureRecognizers>
+                </Frame>
+            </Grid>
         </StackLayout>
-    </StackLayout>
+    </ScrollView>
 </ContentPage>
