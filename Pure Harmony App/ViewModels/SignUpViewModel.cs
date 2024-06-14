@@ -136,8 +136,8 @@ namespace Pure_Harmony_App.ViewModels
                     string.IsNullOrEmpty(Gender) ||
                     string.IsNullOrEmpty(PhysicalAddress) ||
                     string.IsNullOrEmpty(Specialty) ||
-                    DateOfBirth == default(DateTime) ||
-                    CreatedDate == default(DateTime))
+                    DateOfBirth == default(DateTime) 
+                    )
                 {
                     // Display alert or handle UI interactions indicating missing fields
                     return;

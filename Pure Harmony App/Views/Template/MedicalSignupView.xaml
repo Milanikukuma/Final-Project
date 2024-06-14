@@ -12,11 +12,10 @@
                 Padding="20" Margin="20">
                 <ScrollView>
                     <StackLayout Spacing="15">
-                        <Entry Placeholder="First Name" Keyboard="Text" Text="{Binding FirstName}" />
-                        <Entry Placeholder="Last Name" Keyboard="Text" Text="{Binding LastName}" />
+                        <Entry Placeholder="UserName" Keyboard="Text" Text="{Binding UserName}" />
+                        <Entry Placeholder="Password" Keyboard="Text" Text="{Binding Password}" />
                         <Entry Placeholder="Email" Keyboard="Email" Text="{Binding Email}" />
                         <Entry Placeholder="Phone Number" Keyboard="Telephone" Text="{Binding PhoneNumber}" />
-                        <Entry Placeholder="Location" Keyboard="Text" Text="{Binding Location}" />
                         <Entry Placeholder="Specialty" Keyboard="Text" Text="{Binding Specialty}" />
                         <Entry Placeholder="Gender" Keyboard="Text" Text="{Binding Gender}" />
                         <Entry Placeholder="Physical Address" Keyboard="Text" Text="{Binding PhysicalAddress}" />
