@@ -14,6 +14,7 @@ namespace Pure_Harmony_App.ViewModels
         private IRfidSensorBle _rfidBleService;
 
         private string _deviceName;
+        public ICommand AlertsCommand { get; set; }
 
         public string DeviceName
         {
@@ -42,7 +43,9 @@ namespace Pure_Harmony_App.ViewModels
         public ObservableCollection<RfIdTagDetection> TagList
         {
             get { return _tagList; }
-            set { _tagList = value;
+            set
+            {
+                _tagList = value;
 
                 OnPropertyChanged();
             }
@@ -62,7 +65,7 @@ namespace Pure_Harmony_App.ViewModels
             LatestRfIdReading = "N/A";
             DeviceName = "N/A";
 
-            TagList = new ObservableCollection<RfIdTagDetection>();   
+            TagList = new ObservableCollection<RfIdTagDetection>();
 
             WeakReferenceMessenger.Default.Register<RfIdValueReceivedMessage>(this, RfIdMessageReceived);
         }
@@ -72,7 +75,7 @@ namespace Pure_Harmony_App.ViewModels
             var rfIdTagData = message.Value;
             LatestRfIdReading = rfIdTagData.RfIdTagText;
 
-            var existingTag = TagList.FirstOrDefault(x => x.Tag == _lastestRfIdReading);    
+            var existingTag = TagList.FirstOrDefault(x => x.Tag == _lastestRfIdReading);
 
             if (existingTag != null)
             {
@@ -147,6 +150,11 @@ namespace Pure_Harmony_App.ViewModels
             else bluetoothPermission = true;
 
             return bluetoothPermission && locationPermission;
+        }
+
+        public async void AlertsButton(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("alertsview");
         }
     }
 }

@@ -2,6 +2,7 @@ using Pure_Harmony_App.Pages;
 using Pure_Harmony_App.Pages.PatientFolder;
 using Pure_Harmony_App.Service;
 using Pure_Harmony_App.ViewModels;
+using Pure_Harmony_App.Views.Template;
 using System;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
@@ -86,9 +87,9 @@ namespace Pure_Harmony_App.Views
             Navigation.PushAsync(new Reminders());
         }
 
-        private void AlertsButton_Clicked(object sender, EventArgs e)
+        private async void AlertsButton_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Alerts());
+            await Shell.Current.GoToAsync("view");
         }
 
         

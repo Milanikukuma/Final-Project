@@ -251,6 +251,7 @@
                     </Frame.GestureRecognizers>
                 </Frame>
             </Grid>
+
         </StackLayout>
     </ScrollView>
 </ContentPage>

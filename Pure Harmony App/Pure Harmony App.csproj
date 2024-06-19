@@ -115,6 +115,9 @@
 	  <MauiXaml Update="Pages\PatientFolder\Reminders.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\Template\AlertsView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\Controls\DevicePopup.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
