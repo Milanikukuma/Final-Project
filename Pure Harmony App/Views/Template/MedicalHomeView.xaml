@@ -113,7 +113,7 @@
             </Frame>
 
             <!-- Other content -->
-            <Frame BackgroundColor="WhiteSmoke"
+            <!--<Frame BackgroundColor="WhiteSmoke"
                    HasShadow="True"
                    CornerRadius="10"
                    Padding="10"
@@ -123,7 +123,7 @@
                     <Label Text="Notifications" FontSize="16" FontAttributes="Bold" HorizontalOptions="Center" Margin="5,5,5,0" />
                     <Label Text="You have 2 new notifications." FontSize="14" HorizontalOptions="Center" Margin="5,0,5,5" />
                 </StackLayout>
-            </Frame>
+            </Frame>-->
 
             <StackLayout Orientation="Horizontal"
                          HorizontalOptions="Center"
