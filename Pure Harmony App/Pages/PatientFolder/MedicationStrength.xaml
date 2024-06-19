@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pure_Harmony_App.Pages.PatientFolder.MedicationStrength"
+             Title="MedicationStrength">
+    <Grid BackgroundColor="#BFDDCE">
+        <!-- Main Layout -->
+        <StackLayout VerticalOptions="Start" HorizontalOptions="Center" Margin="0,50,0,0" WidthRequest="300">
+
+            <!-- Medication Strength Heading -->
+            <Label Text="Add the Medication Strength"
+                   FontAttributes="Bold"
+                   FontSize="20"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,10"/>
+
+            <!-- Strength Entry -->
+            <Entry x:Name="StrengthEntry"
+                   Placeholder="Add Strength"
+                   Keyboard="Numeric"
+                   Margin="0,0,0,20"
+                   HeightRequest="30"/>
+
+            <!-- Medication Unit Heading -->
+            <Label Text="Choose Unit"
+                   FontAttributes="Bold"
+                   FontSize="16"
+                   Margin="0,0,0,10"/>
+
+            <!-- Medication Units Buttons -->
+            <StackLayout Margin="0,0,0,20">
+                <Button Text="mg" Margin="0,5,0,5" HeightRequest="40" BackgroundColor="#226F81" TextColor="White" Clicked="OnUnitButtonClicked"/>
+                <Button Text="mcg" Margin="0,5,0,5" HeightRequest="40" BackgroundColor="#226F81" TextColor="White" Clicked="OnUnitButtonClicked"/>
+                <Button Text="g" Margin="0,5,0,5" HeightRequest="40" BackgroundColor="#226F81" TextColor="White" Clicked="OnUnitButtonClicked"/>
+                <Button Text="ml" Margin="0,5,0,5" HeightRequest="40" BackgroundColor="#226F81" TextColor="White" Clicked="OnUnitButtonClicked"/>
+                <Button Text="%" Margin="0,5,0,5" HeightRequest="40" BackgroundColor="#226F81" TextColor="White" Clicked="OnUnitButtonClicked"/>
+            </StackLayout>
+
+            <!-- Frequency Heading -->
+            <Label Text="When will you take this?"
+                   FontAttributes="Bold"
+                   FontSize="16"
+                   Margin="0,0,0,10"/>
+
+            <!-- Frequency Entry -->
+            <Entry x:Name="FrequencyEntry"
+                   Placeholder="Frequency"
+                   Margin="0,0,0,20"
+                   HeightRequest="30"/>
+
+            <!-- Time Picker -->
+            <TimePicker x:Name="TimePicker"
+                        Time="09:50"
+                        Format="HH:mm"
+                        Margin="0,0,0,20" />
+
+            <!-- Next Button -->
+            <Button Text="Next"
+                    Margin="0,5,0,5"
+                    HeightRequest="40"
+                    BackgroundColor="#226F81"
+                    TextColor="White"
+                    Clicked="OnNextButtonClicked"/>
+
+        </StackLayout>
+    </Grid>
+</ContentPage>

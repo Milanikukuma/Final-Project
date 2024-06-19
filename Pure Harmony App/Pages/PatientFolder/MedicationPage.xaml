@@ -36,7 +36,7 @@
             </StackLayout>
 
             <!-- Next Button -->
-            <Button Text="Next" Margin="0,5,0,5" HeightRequest="40" BackgroundColor="#226F81" TextColor="White"/>
+            <Button Text="Next" Margin="0,5,0,5" HeightRequest="40" BackgroundColor="#226F81" TextColor="White"   Clicked="Next_Clicked"/>
         </StackLayout>
     </Grid>
 
