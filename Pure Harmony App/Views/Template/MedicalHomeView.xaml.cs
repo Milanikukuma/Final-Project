@@ -18,7 +18,7 @@ public partial class MedicalHomeView : ContentPage
 
     private void AlertsButton_Clicked(object sender, EventArgs e)
     {
-
+        Navigation.PushAsync(new Alerts());
     }
 
     private void OnProfileButtonClicked(object sender, EventArgs e)

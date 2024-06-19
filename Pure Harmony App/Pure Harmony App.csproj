@@ -59,7 +59,9 @@
 	  <None Remove="Resources\Images\bg.jpeg" />
 	  <None Remove="Resources\Images\coughresearch.jpg" />
 	  <None Remove="Resources\Images\docwallpaper.jpg" />
+	  <None Remove="Resources\Images\download.jpeg" />
 	  <None Remove="Resources\Images\listofpatients.jpg" />
+	  <None Remove="Resources\Images\medicalwallpaper.jpeg" />
 	  <None Remove="Resources\Images\medwallpaper.jpg" />
 	  <None Remove="Resources\Images\patient.jpg" />
 	  <None Remove="Resources\Images\profilemedpic.jpg" />
