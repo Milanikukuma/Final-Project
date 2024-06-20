@@ -66,6 +66,7 @@
 	  <None Remove="Resources\Images\patient.jpg" />
 	  <None Remove="Resources\Images\profilemedpic.jpg" />
 	  <None Remove="Resources\Images\researchpic.jpg" />
+	  <None Remove="Resources\Images\rfid.png" />
 	  <None Remove="Resources\Images\TB.jpg" />
 	  <None Remove="Resources\Images\tbresearch.jpg" />
 	  <None Remove="Resources\Images\TreatmentPlans.jpg" />

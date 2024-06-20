@@ -77,15 +77,7 @@ namespace Pure_Harmony_App.ViewModels
 
             var existingTag = TagList.FirstOrDefault(x => x.Tag == _lastestRfIdReading);
 
-            if (existingTag != null)
-            {
-                existingTag.Count++;
-            }
-            else
-            {
-                TagList.Add(new RfIdTagDetection { Tag = _lastestRfIdReading, Count = 1 });
-            }
-        }
+             }
 
         private async void OnReadRfId(object obj)
         {

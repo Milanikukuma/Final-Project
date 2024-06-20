@@ -9,26 +9,26 @@ public partial class MedicalHomeView : ContentPage
 		InitializeComponent();
 	}
 
-    private void PatientsButton_Clicked(object sender, EventArgs e)
+    private async void PatientsButton_Clicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new Patients());
+        await Shell.Current.GoToAsync("patients");
     }
 
     
 
-    private void AlertsButton_Clicked(object sender, EventArgs e)
+    private async void AlertsButton_Clicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new Alerts());
+        await Shell.Current.GoToAsync("alerts");
     }
 
-    private void OnProfileButtonClicked(object sender, EventArgs e)
+    private  async void OnProfileButtonClicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new ProfilePage());
+        await Shell.Current.GoToAsync("profilepage");
     }
 
-    private void AboutUsButton_Clicked(object sender, EventArgs e)
+    private async void AboutUsButton_Clicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new AboutUs());
+        await Shell.Current.GoToAsync("aboutus");
 
     }
 

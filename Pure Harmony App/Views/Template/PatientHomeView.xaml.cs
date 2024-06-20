@@ -82,9 +82,9 @@ namespace Pure_Harmony_App.Views
 
        
 
-        private void MedRemindersButton_Clicked(object sender, EventArgs e)
+        private async void MedRemindersButton_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Reminders());
+            await Shell.Current.GoToAsync("reminders");
         }
 
         private async void AlertsButton_Clicked(object sender, EventArgs e)
@@ -97,12 +97,12 @@ namespace Pure_Harmony_App.Views
         private async void MedicationButton_Clicked(object sender, EventArgs e)
         {
 
-            Navigation.PushAsync(new MedicationPage());
+            await Shell.Current.GoToAsync("medicationpage");
         }
 
-        private void AboutUsButton_Clicked(object sender, EventArgs e)
+        private async void AboutUsButton_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new AboutUs());
+            await Shell.Current.GoToAsync("aboutus");
         }
 
         private void OnProfileButtonClicked(object sender, EventArgs e)
