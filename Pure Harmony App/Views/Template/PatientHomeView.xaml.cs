@@ -89,13 +89,14 @@ namespace Pure_Harmony_App.Views
 
         private async void AlertsButton_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("view");
+            await Shell.Current.GoToAsync("alertsview");
         }
 
-        
+
 
         private async void MedicationButton_Clicked(object sender, EventArgs e)
         {
+
             Navigation.PushAsync(new MedicationPage());
         }
 
@@ -130,6 +131,11 @@ namespace Pure_Harmony_App.Views
             string websiteURI = "https://www.who.int/health-topics/tuberculosis#tab=tab_1";
 
             await Launcher.OpenAsync(websiteURI);
+        }
+
+        private void AlertsButton_Clicked(object sender, TappedEventArgs e)
+        {
+
         }
     }
 }
